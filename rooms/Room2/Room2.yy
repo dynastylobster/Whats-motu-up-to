@@ -22,7 +22,7 @@
           7,7,19,-5,7,3,19,23,71,-4,7,-3,31,1,71,-3,7,1,24,-5,1,2,25,9,-3,1,9,10,7,45,45,46,31,31,71,23,-7,7,1,
           19,-3,7,2,27,7,-3,53,2,45,46,-3,31,3,71,23,71,-3,7,1,19,-3,7,2,44,46,-5,53,-2,45,1,46,-3,31,9,71,7,7,
           24,1,1,2,60,62,-8,53,-2,45,1,46,-3,31,1,71,-5,7,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"T_BerTileSummer","path":"tilesets/T_BerTileSummer/T_BerTileSummer.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":null,"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "name":"Room2",
