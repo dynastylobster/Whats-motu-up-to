@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+// CREDITS: PLOURPLES.COM : CAMERA OPERATOR
+
 #macro CAM_X camera_get_view_x(view_camera[0])
 #macro CAM_Y camera_get_view_y(view_camera[0])
 
@@ -12,6 +15,9 @@
 #macro GETLAYER layer_get_id
 
 facing = 1;
+box_shift = 0;
+cam_x = 0; // Or set to player start pos
+cam_y = 0;
  cam_l = clamp(cam_x + (CAM_W/2) -32,0,room_width-CAM_W) 
  cam_r = clamp(cam_x + (CAM_W/2) +32,0,room_width-CAM_W) 
  cam_max = 64
