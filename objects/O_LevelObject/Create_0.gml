@@ -10,3 +10,9 @@
 #macro CAM_H camera_get_view_height(view_camera[0])
 
 #macro GETLAYER layer_get_id
+
+facing = 1;
+ cam_l = clamp(cam_x + (CAM_W/2) -32,0,room_width-CAM_W) 
+ cam_r = clamp(cam_x + (CAM_W/2) +32,0,room_width-CAM_W) 
+ cam_max = 64
+ cam_min = -64
