@@ -1,3 +1,5 @@
+audio_play_sound(Snd_Slice,0,0,global.sfxvolume,0,1);
+
 mask_index = S_Empty;
 motu = noone
 if instance_exists(O_Motu) {
