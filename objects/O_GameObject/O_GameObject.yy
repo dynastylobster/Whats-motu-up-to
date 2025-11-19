@@ -13,6 +13,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":123,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":82,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"O_GameObject",
@@ -49,7 +50,7 @@
       ],"multiselect":false,"name":"FilterMode","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Sharp Bilinear\"","varType":6,},
     {"$GMObjectProperty":"v1","%Name":"ViewWidth","filters":[],"listItems":[],"multiselect":false,"name":"ViewWidth","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"DefaultViewWidth","varType":4,},
     {"$GMObjectProperty":"v1","%Name":"ViewHeight","filters":[],"listItems":[],"multiselect":false,"name":"ViewHeight","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"DefaultViewHeight","varType":4,},
-    {"$GMObjectProperty":"v1","%Name":"WindowScale","filters":[],"listItems":[],"multiselect":false,"name":"WindowScale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"WindowScale","filters":[],"listItems":[],"multiselect":false,"name":"WindowScale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"MaxWindowScale","filters":[],"listItems":[],"multiselect":false,"name":"MaxWindowScale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"FixedRatio","filters":[],"listItems":[
         "[16,9]",

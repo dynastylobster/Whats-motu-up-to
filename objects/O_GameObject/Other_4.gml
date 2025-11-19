@@ -1,5 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+SwitchScale(false);
+layer_set_visible(layer_get_id("ColTileSemi"),global.debugmode)
+layer_set_visible(layer_get_id("ColTileWall"),global.debugmode)
+layer_set_visible(layer_get_id("ColTileSlope"),global.debugmode)
+
 if !instance_exists(O_LevelObject) {
 		instance_create_depth(x,y,depth,O_LevelObject);
 	}

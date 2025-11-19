@@ -1,0 +1,123 @@
+if !global.stop {
+	if coyotetime > 0 coyotetime--
+	
+if !grounded {
+	if yspeed < max_yspeed {
+			yspeed += grav 
+		}
+	}
+	
+if place_meeting(x,y+1,[WALL,WALLTILE]) {
+	yspeed = 0
+	grounded = true
+	} else {
+		if grounded {
+			coyotetime = 6;
+			grounded = false;
+			}
+		}
+if !place_meeting(x,y-abs(yspeed),[WALL,WALLTILE]) {
+y+= yspeed
+} else {
+		yspeed = 1
+		y++
+	}
+
+
+if grounded or coyotetime > 0 {
+if sprite_index = S_MotuJump then sprite_index = S_MotuRun;
+if InputPressed(INPUT_VERB.ACCEPT) {
+		yspeed = -jumpspeed
+		grounded = false
+		y-= 1
+	}
+	while place_meeting(x,y,[WALL,WALLTILE]) {
+			y-= 0.125
+		}
+	if !InputCheck(INPUT_VERB.RIGHT) and !InputCheck(INPUT_VERB.LEFT) {
+		running = false;
+		if xspeed > 0 xspeed -= accel 
+		if xspeed < 0 xspeed += accel
+	}
+}
+
+
+	if InputCheck(INPUT_VERB.LEFT) {
+			if !slicing {facing = -1;}
+			
+			if !running {
+			if xspeed > (-max_walkspeed) {
+					xspeed -= accel
+				}
+			}
+			if running {
+			if xspeed > (-max_runspeed) {xspeed -= accel}	
+			}
+				
+				
+			}
+	if InputCheck(INPUT_VERB.RIGHT) {
+		if !slicing {facing = 1;}
+		
+		if !running {
+			if xspeed < (max_walkspeed) {
+					xspeed += accel
+				}
+			}
+			if running {
+			if xspeed < (max_runspeed) {xspeed += accel}	
+			}
+				
+				
+				
+			}
+			
+		if !running and !slicing {
+			if abs(xspeed) > 0 {sprite_index = S_MotuWalk; image_speed = 1}
+			if xspeed = 0 {sprite_index = S_MotuIdle; image_speed = 0;}
+		}
+		
+		if running and !slicing {
+			if abs(xspeed) > 0 {sprite_index = S_MotuRun; image_speed = 1}
+			if xspeed = 0 {sprite_index = S_MotuIdle; image_speed = 0;}
+		}
+
+if !place_meeting(x+xspeed+(1*sign(xspeed)),y,[WALL,WALLTILE]) {
+	x+= xspeed
+	}
+
+if place_meeting(x,y+yspeed,[SEMI,SEMITILE]) {
+	if yspeed >= 0 {
+			while place_meeting(x,y,[SEMI,SEMITILE]) {
+			y-= 0.25
+			grounded = true
+			yspeed = 0;
+			}
+		}
+	}
+	
+if place_meeting(x,y+2,[SEMI,SEMITILE]) {
+		if yspeed >= 0 {grounded = true}
+	}
+
+if !grounded and !slicing {
+		if yspeed < 0 {sprite_index = S_MotuJump; image_speed = 0; image_index = 0}
+		if yspeed > 0 {sprite_index = S_MotuJump; image_speed = 0; image_index = 1}
+	}
+
+if !InputCheck(INPUT_VERB.ACCEPT) {
+		if yspeed < 0 {
+				yspeed*= 0.8
+			}
+	}
+if InputPressed(INPUT_VERB.ACTION) {
+		if !instance_exists(O_Slice) {
+			slicing = true;
+			instance_create_depth(x,y,depth,O_Slice)	
+		}
+	}
+
+
+
+
+}

@@ -8,3 +8,12 @@ if windowwidth != CurrentWindowWidth or windowheight != CurrentWindowHeight {
 		WindowSizeCall();
 	}
 }
+
+if global.stoptimer > 0 {
+	global.stop = true
+	global.stoptimer --
+	}
+if global.stoptimer <= 0 {
+	global.stop = false;
+	global.stoptimer = 0;
+	}
