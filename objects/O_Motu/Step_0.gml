@@ -9,6 +9,7 @@ if !grounded {
 	
 if place_meeting(x,y+1,[WALL,WALLTILE]) {
 	yspeed = 0
+ if grounded = false then landingtimer = 4;
 	grounded = true
 	} else {
 		if grounded {
@@ -90,6 +91,7 @@ if place_meeting(x,y+yspeed,[SEMI,SEMITILE]) {
 	if yspeed >= 0 {
 			while place_meeting(x,y,[SEMI,SEMITILE]) {
 			y-= 0.25
+			if grounded = false then landingtimer = 4;
 			grounded = true
 			yspeed = 0;
 			}
@@ -116,8 +118,12 @@ if InputPressed(INPUT_VERB.ACTION) {
 			instance_create_depth(x,y,depth,O_Slice)	
 		}
 	}
-
-
+	
+	if landingtimer > 0 {
+		landingtimer--
+		sprite_index = S_MotuLand
+	}
+if slicing {landingtimer = 0;sprite_index = S_MotuSlice}
 
 
 }

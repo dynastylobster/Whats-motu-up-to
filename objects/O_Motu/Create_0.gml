@@ -5,3 +5,4 @@ draw_y = ceil(y);
 facing = 1;
 running = false;
 slicing = false;
+landingtimer = 0;
