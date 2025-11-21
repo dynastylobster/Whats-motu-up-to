@@ -7,7 +7,7 @@ if !grounded {
 		}
 	}
 	
-if place_meeting(x,y+1,[WALL,WALLTILE]) {
+if place_meeting(x,y+1,[WALL,WALLTILE]) or place_meeting(x,y+1,O_Wall) {
 	yspeed = 0
  if grounded = false then landingtimer = 4;
 	grounded = true
@@ -17,9 +17,11 @@ if place_meeting(x,y+1,[WALL,WALLTILE]) {
 			grounded = false;
 			}
 		}
-if !place_meeting(x,y-abs(yspeed),[WALL,WALLTILE]) {
+if (!place_meeting(x,y-abs(yspeed),[WALL,WALLTILE]) or place_meeting(x,y-abs(yspeed),O_Wall) ) and !place_meeting(x,y,O_Wall) {
+	
 y+= yspeed
 } else {
+	    audio_play_sound(Snd_Land,0,0,global.sfxvolume,0,1.3)
 		yspeed = 1
 		y++
 	}
@@ -28,11 +30,12 @@ y+= yspeed
 if grounded or coyotetime > 0 {
 if sprite_index = S_MotuJump then sprite_index = S_MotuRun;
 if InputPressed(INPUT_VERB.ACCEPT) {
+	audio_play_sound(Snd_Jump,0,0,global.sfxvolume*1.25,0,1);
 		yspeed = -jumpspeed
 		grounded = false
 		y-= 1
 	}
-	while place_meeting(x,y,[WALL,WALLTILE]) {
+	while place_meeting(x,y,[WALL,WALLTILE]) or place_meeting(x,y,O_Wall) {
 			y-= 0.125
 		}
 	if !InputCheck(INPUT_VERB.RIGHT) and !InputCheck(INPUT_VERB.LEFT) {
@@ -83,22 +86,22 @@ if InputPressed(INPUT_VERB.ACCEPT) {
 			if xspeed = 0 {sprite_index = S_MotuIdle; image_speed = 0;}
 		}
 
-if !place_meeting(x+xspeed+(1*sign(xspeed)),y,[WALL,WALLTILE]) {
+if !place_meeting(x+xspeed+(1*sign(xspeed)),y,[WALL,WALLTILE]) and !place_meeting(x+xspeed+(1*sign(xspeed)),y,O_Wall){
 	x+= xspeed
 	}
 
-if place_meeting(x,y+yspeed,[SEMI,SEMITILE]) {
+if place_meeting(x,y+yspeed,[SEMI,SEMITILE]) or place_meeting(x,y,O_Semi) {
 	if yspeed >= 0 {
 			while place_meeting(x,y,[SEMI,SEMITILE]) {
 			y-= 0.25
-			if grounded = false then landingtimer = 4;
+			if grounded = false then {landingtimer = 4}
 			grounded = true
 			yspeed = 0;
 			}
 		}
 	}
 	
-if place_meeting(x,y+2,[SEMI,SEMITILE]) {
+if place_meeting(x,y+2,[SEMI,SEMITILE]) or place_meeting(x,y+2,O_Semi){
 		if yspeed >= 0 {grounded = true}
 	}
 
@@ -120,6 +123,9 @@ if InputPressed(INPUT_VERB.ACTION) {
 	}
 	
 	if landingtimer > 0 {
+		if landingtimer = 4 {
+		audio_play_sound(Snd_Land,0,0,global.sfxvolume,0,random_range(1,1.2))	
+		}
 		landingtimer--
 		sprite_index = S_MotuLand
 	}

@@ -5,6 +5,7 @@ if (image_index < 1) or (image_index >= 2) {
 		mask_index = S_Empty;
 	}
 if image_index > 1 and image_index < 2 {
+		motu.running = true;
 		mask_index = sprite_index
 	}
 }
