@@ -17,7 +17,7 @@ if place_meeting(x,y+1,[WALL,WALLTILE]) or place_meeting(x,y+1,O_Wall) {
 			grounded = false;
 			}
 		}
-if (!place_meeting(x,y-abs(yspeed),[WALL,WALLTILE]) or place_meeting(x,y-abs(yspeed),O_Wall) ) and !place_meeting(x,y,O_Wall) {
+if (!place_meeting(x,y-abs(yspeed),[WALL,WALLTILE]) and !place_meeting(x,y-abs(yspeed),O_Wall) ) {
 	
 y+= yspeed
 } else {
