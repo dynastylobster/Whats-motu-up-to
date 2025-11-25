@@ -85,6 +85,7 @@
   },
   "name":"whats motu up to",
   "resources":[
+    {"id":{"name":"TinyFont","path":"fonts/TinyFont/TinyFont.yy",},},
     {"id":{"name":"__InputUpdateController","path":"objects/__InputUpdateController/__InputUpdateController.yy",},},
     {"id":{"name":"O_All","path":"objects/O_All/O_All.yy",},},
     {"id":{"name":"O_CoinFlip","path":"objects/O_CoinFlip/O_CoinFlip.yy",},},

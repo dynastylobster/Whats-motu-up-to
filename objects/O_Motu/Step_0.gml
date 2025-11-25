@@ -7,20 +7,20 @@ if !grounded {
 		}
 	}
 	
-if place_meeting(x,y+1,[WALL,WALLTILE]) or place_meeting(x,y+1,O_Wall) {
+if place_meeting(x,y+1,[WALL,WALLTILE]) or place_meeting(x,y+1,O_Wall) or sloping {
 	yspeed = 0
  if grounded = false then landingtimer = 4;
 	grounded = true
 	} else {
 		if grounded {
 			coyotetime = 6;
-			grounded = false;
+		if !sloping then grounded = false;
 			}
 		}
-if (!place_meeting(x,y-abs(yspeed),[WALL,WALLTILE]) and !place_meeting(x,y-abs(yspeed),O_Wall) ) {
+if (!place_meeting(x,y-abs(yspeed),[WALL,WALLTILE]) and !place_meeting(x,y-abs(yspeed),O_Wall) ) and !sloping {
 	
 y+= yspeed
-} else {
+} else if !sloping {
 	    audio_play_sound(Snd_Land,0,0,global.sfxvolume,0,1.3)
 		yspeed = 1
 		y++
@@ -32,6 +32,7 @@ if sprite_index = S_MotuJump then sprite_index = S_MotuRun;
 if InputPressed(INPUT_VERB.ACCEPT) {
 	audio_play_sound(Snd_Jump,0,0,global.sfxvolume*1.25,0,1);
 		yspeed = -jumpspeed
+		if sloping {y-= 2;sloping = false;}
 		grounded = false
 		y-= 1
 	}
@@ -90,7 +91,7 @@ if !place_meeting(x+xspeed+(1*sign(xspeed)),y,[WALL,WALLTILE]) and !place_meetin
 	x+= xspeed
 	}
 
-if place_meeting(x,y+yspeed,[SEMI,SEMITILE]) or place_meeting(x,y,O_Semi) {
+if place_meeting(x,y+yspeed,[SEMI,SEMITILE]) or place_meeting(x,y+yspeed,O_Semi){
 	if yspeed >= 0 {
 			while place_meeting(x,y,[SEMI,SEMITILE]) {
 			y-= 0.25
@@ -131,5 +132,19 @@ if InputPressed(INPUT_VERB.ACTION) {
 	}
 if slicing {landingtimer = 0;sprite_index = S_MotuSlice}
 
+//undo speed gained by slopes
+if !sloping and !running {
+		if xspeed > 0 {
+				if xspeed > max_walkspeed then {xspeed -= accel/16};
+			}
+		if xspeed < 0 {
+				if xspeed < -max_walkspeed then {xspeed += accel/16};
+			}
+	}
+	
+//fix tiny momentum retention
+if abs(xspeed) < 0.25 {
+		xspeed = 0;
+	}
 
 }

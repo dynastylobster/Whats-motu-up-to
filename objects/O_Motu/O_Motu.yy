@@ -41,6 +41,7 @@
     {"$GMObjectProperty":"v1","%Name":"coyotetime","filters":[],"listItems":[],"multiselect":false,"name":"coyotetime","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"max_runspeed","filters":[],"listItems":[],"multiselect":false,"name":"max_runspeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2.5","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"BrightPalette","filters":[],"listItems":[],"multiselect":false,"name":"BrightPalette","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"sloping","filters":[],"listItems":[],"multiselect":false,"name":"sloping","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

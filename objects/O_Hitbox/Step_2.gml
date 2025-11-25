@@ -54,8 +54,55 @@ switch owner.object_index {
 			}
 		}
 		break;
+		
+				case O_Motu: {
+				if hitboxnum = 0 {
+					//active slope mode.
+				while place_meeting(x,y+1,[SLOPE,SLOPETILE]) or place_meeting(x,y+1,O_Slope) and owner.yspeed >= 0 {
+								on = true;
+					with owner {		
+									if !grounded then landingtimer = 4;
+									sloping = true;
+									if yspeed > 0 then {yspeed = 0;}
+									grounded = true;
+									y-= 0.25
+							} 
+							y = owner.y + yoffset
+						} 
+				
+	/*fix the transition between slope and floor. removing this lock up the game */		
+	if !place_meeting(x,y+2,[WALL,WALLTILE]) and !place_meeting(x,y,O_Wall) {
+	//check to see if the slope is below you but youre not touching it, so move motu down
+				while (owner.grounded) and (!place_meeting(x,y+1,[SLOPE,SLOPETILE]) and !place_meeting(x,y,O_Slope) ) and owner.sloping and owner.yspeed >= 0
+				{owner.y+=0.25; y = owner.y + yoffset;}
+	}
+						// if youre not near the slope, stop thinking you be sloping
+					if !place_meeting(x,y+5,[SLOPE,SLOPETILE]) and !place_meeting(x,y+5,O_Slope) then {on = false; owner.sloping = false;}
+
+						//	draw_line(x,y+4,x+owner.facing*4,y+4)	
+						//	draw_line(x,y-1,x+owner.facing*8,y-1)
+						if abs(owner.xspeed) > 1 {
+						if collision_line(x,y+4,x+owner.facing*4,y+4,[SLOPE,SLOPETILE],true,false) or collision_line(x,y+4,x+owner.facing*4,y+4,O_Slope,true,false) {
+								if owner.facing = 1 {owner.xspeed -= 0.25}
+								if owner.facing = -1 {owner.xspeed += 0.25}
+							}
+						if collision_line(x,y-1,x+owner.facing*8,y-1,[SLOPE,SLOPETILE],true,false) or collision_line(x,y-1,x+owner.facing*8,y-1,O_Slope,true,false) {
+								if owner.facing = 1 {owner.xspeed -= 0.5}
+								if owner.facing = -1 {owner.xspeed += 0.5}
+							}
+							
+						if (collision_line(x,y+4,x-owner.facing*4,y+4,[SLOPE,SLOPETILE],true,false) or collision_line(x,y+4,x-owner.facing*4,y+4,O_Slope,true,false) ) and abs(owner.xspeed) < (owner.max_walkspeed+0.75) {
+								if owner.facing = 1 {owner.xspeed += 0.125}
+								if owner.facing = -1 {owner.xspeed -= 0.125}
+							}
+						}
+				}
+			}
+			
+
+			break;
+		}
 	}
 	
 	
-}
 }
