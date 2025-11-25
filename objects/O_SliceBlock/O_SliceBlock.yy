@@ -12,8 +12,8 @@
   "name":"O_SliceBlock",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Common",
+    "path":"folders/Objects/Common.yy",
   },
   "parentObjectId":{
     "name":"O_Wall",

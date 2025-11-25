@@ -11,8 +11,8 @@
   "name":"O_SliceTest",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Don't Place",
+    "path":"folders/Objects/Don't Place.yy",
   },
   "parentObjectId":{
     "name":"O_All",
