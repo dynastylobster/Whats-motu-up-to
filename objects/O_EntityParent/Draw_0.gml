@@ -12,4 +12,6 @@ draw_sprite_ext(sprite_index,image_index,draw_x,y,image_xscale,image_yscale,0,c_
 
 pal_swap_reset();
 */
-DrawEntity();
+if !dead {
+	DrawEntity();
+}
