@@ -78,9 +78,6 @@ switch owner.object_index {
 	}
 						// if youre not near the slope, stop thinking you be sloping
 					if !place_meeting(x,y+5,[SLOPE,SLOPETILE]) and !place_meeting(x,y+5,O_Slope) then {on = false; owner.sloping = false;}
-
-						//	draw_line(x,y+4,x+owner.facing*4,y+4)	
-						//	draw_line(x,y-1,x+owner.facing*8,y-1)
 						if abs(owner.xspeed) > 1 {
 						if collision_line(x,y+4,x+owner.facing*4,y+4,[SLOPE,SLOPETILE],true,false) or collision_line(x,y+4,x+owner.facing*4,y+4,O_Slope,true,false) {
 								if owner.facing = 1 {owner.xspeed -= 0.25}
