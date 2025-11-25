@@ -48,8 +48,8 @@
     {"name":"Virtual Buttons","order":12,"path":"folders/Input/Virtual Buttons.yy",},
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
-    {"name":"Don't Place","order":14,"path":"folders/Objects/Don't Place.yy",},
     {"name":"Common","order":15,"path":"folders/Objects/Common.yy",},
+    {"name":"Don't Place","order":14,"path":"folders/Objects/Don't Place.yy",},
     {"name":"Universal","order":6,"path":"folders/Objects/Universal.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
@@ -70,7 +70,7 @@
   "ResourceOrderSettings":[
     {"name":"__InputUpdateController","order":19,"path":"objects/__InputUpdateController/__InputUpdateController.yy",},
     {"name":"O_CoinFlip","order":3,"path":"objects/O_CoinFlip/O_CoinFlip.yy",},
-    {"name":"O_EnemyParent","order":1,"path":"objects/O_EnemyParent/O_EnemyParent.yy",},
+    {"name":"O_EntityParent","order":1,"path":"objects/O_EntityParent/O_EntityParent.yy",},
     {"name":"O_GameObject","order":1,"path":"objects/O_GameObject/O_GameObject.yy",},
     {"name":"O_Hitbox","order":7,"path":"objects/O_Hitbox/O_Hitbox.yy",},
     {"name":"O_HitBoxTest","order":8,"path":"objects/O_HitBoxTest/O_HitBoxTest.yy",},
