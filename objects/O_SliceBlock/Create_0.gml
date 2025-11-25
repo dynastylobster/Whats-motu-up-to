@@ -3,3 +3,6 @@
 dead = false;
 deathtimer = 0;
 draw_x = x
+hit = false;
+brightoffset = 0;
+currentpal = initialpalette;

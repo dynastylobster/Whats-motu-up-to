@@ -5,6 +5,9 @@ global.debugmode = false;
 global.stop = false;
 global.paused = false;
 global.stoptimer = 0;
+global.brightsprites = false;
+global.enemypal = S_EnemyPal1;
+global.enemyhittimer = 0;
 
 #macro STOP global.stop
 #macro PAUSED global.paused

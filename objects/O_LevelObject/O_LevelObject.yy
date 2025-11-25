@@ -42,6 +42,7 @@
         "\"Bottom\"",
       ],"multiselect":false,"name":"VerticalBgMode","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Looping\"","varType":6,},
     {"$GMObjectProperty":"v1","%Name":"SpritePalette","filters":[],"listItems":[],"multiselect":false,"name":"SpritePalette","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"S_EnemyPal1","path":"sprites/S_EnemyPal1/S_EnemyPal1.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"S_EnemyPal1","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"BrightSprites","filters":[],"listItems":[],"multiselect":false,"name":"BrightSprites","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

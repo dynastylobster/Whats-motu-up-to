@@ -1,5 +1,5 @@
 function HitAnyone(){
-	hp -= 1;
+
 	if instance_exists(O_Slice) {
 		with O_Slice {
 			done_slicing = true;
@@ -14,4 +14,8 @@ function HitAnyone(){
 			running = true;	
 		}
 	}
+hit = true;
+hittimer = 8;
+currentpal = 8;
+hp-=1;
 }

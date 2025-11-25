@@ -22,3 +22,7 @@ cam_y = 0;
  cam_r = clamp(cam_x + (CAM_W/2) +32,0,room_width-CAM_W) 
  cam_max = 64
  cam_min = -64
+ 
+if BrightSprites {
+		global.brightsprites = true;
+	}

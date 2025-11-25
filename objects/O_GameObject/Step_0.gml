@@ -9,6 +9,10 @@ if windowwidth != CurrentWindowWidth or windowheight != CurrentWindowHeight {
 	}
 }
 
+if global.enemyhittimer > 0 {
+	global.enemyhittimer --;
+	}
+
 if global.stoptimer > 0 {
 	global.stop = true
 	global.stoptimer --
