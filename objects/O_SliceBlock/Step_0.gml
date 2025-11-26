@@ -6,5 +6,9 @@ if deathtimer > -1 and dead {
 	deathtimer--	
 }
 if deathtimer <= -1 {
+		instance_create_depth(x,y-10,depth-50,O_SliceBlockParticle).direction = 315
+		instance_create_depth(x,y-10,depth-50,O_SliceBlockParticle).direction = 225
+		instance_create_depth(x,y+10,depth-50,O_SliceBlockParticle).direction = 0
+		instance_create_depth(x,y+10,depth-50,O_SliceBlockParticle).direction = 180
 		instance_destroy();
 	}
