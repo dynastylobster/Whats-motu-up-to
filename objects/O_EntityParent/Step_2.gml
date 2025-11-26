@@ -19,6 +19,7 @@ if hittimer <= 0 hit = false;
 
 if hp <= 0 {
 	if !dead {
+		instance_create_depth(int64(x),int64(y),depth,O_ExplodeEffect)
 	audio_play_sound(Snd_SmallExplode,0,0,global.sfxvolume,0,0.6)
 		var angle = 45;
 	instance_create_depth(x,y,depth,O_ScrewParticle).direction = angle;
