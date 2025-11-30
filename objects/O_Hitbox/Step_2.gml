@@ -1,9 +1,8 @@
 /// @description Insert description here
 // You can write your code in this 
-
-if !global.stoptimer {
 x = owner.x + xoffset
 //y = owner.y + yoffset
+if !global.stoptimer {
 
 if !instance_exists(owner) {
 		instance_destroy();
@@ -75,7 +74,7 @@ switch owner.object_index {
 	/*fix the transition between slope and floor. removing this lock up the game */		
 	if !place_meeting(x,y+2,[WALL,WALLTILE]) and !place_meeting(x,y,O_Wall) {
 	//check to see if the slope is below you but youre not touching it, so move motu down
-				while (owner.grounded) and (!place_meeting(x,y+1,[SLOPE,SLOPETILE]) and !place_meeting(x,y,O_Slope) ) and owner.sloping and owner.yspeed >= 0
+				while (owner.grounded) and (!place_meeting(x,y+1,[SLOPE,SLOPETILE]) and !place_meeting(x,y,O_Slope) ) and owner.sloping and owner.yspeed >= 0 and owner.downslicing = false
 				{owner.y+=0.25; y = owner.y + yoffset;}
 	}
 						// if youre not near the slope, stop thinking you be sloping

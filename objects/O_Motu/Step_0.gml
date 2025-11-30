@@ -1,3 +1,7 @@
+if landingtimer > 0 {
+		global.stoptimer = 0
+	}
+
 if !global.stop {
 	if coyotetime > 0 coyotetime--
 	
@@ -6,7 +10,8 @@ if !grounded {
 			yspeed += grav 
 		}
 	}
-	
+
+
 if place_meeting(x,y+1,[WALL,WALLTILE]) or place_meeting(x,y+1,O_Wall) or sloping {
 	yspeed = 0
  if grounded = false then landingtimer = 4;
@@ -147,7 +152,7 @@ if abs(xspeed) < 0.25 {
 		xspeed = 0;
 	}
 	
-if !grounded and InputPressed(INPUT_VERB.DOWN) {
+if !grounded and InputPressed(INPUT_VERB.DOWN) and (O_LevelObject.hassword = true) {
 		if !downslicing and !place_meeting(x,y+9,[WALL,WALLTILE]) and !place_meeting(x,y+9,O_Wall) {
 			xspeed*= 0.5
 			audio_play_sound(Snd_Slice,0,0,global.sfxvolume*0.35,0,1.3);
@@ -155,6 +160,10 @@ if !grounded and InputPressed(INPUT_VERB.DOWN) {
 		} else {
 			downslicing = false;	
 		}
+	}
+//fix bug that gets the game to stop for some fucking reason
+if place_meeting(x,y+2,[WALL,WALLTILE]) or place_meeting(x,y+2,O_Wall) or place_meeting(x,y+2,O_Slope) or place_meeting(x,y+2,[SLOPE,SLOPETILE]) or place_meeting(x,y+2,[SEMI,SEMITILE]) or place_meeting(x,y+2,O_Semi) {
+		downslicing = false;
 	}
 
 if downslicing {

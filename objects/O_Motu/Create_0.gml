@@ -1,4 +1,5 @@
 // Inherit the parent event
+mask_index = S_MotuIdle
 depth -= 25
 event_inherited();
 draw_x = int64(x);
