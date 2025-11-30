@@ -1,4 +1,5 @@
 // Inherit the parent event
+depth -= 25
 event_inherited();
 draw_x = int64(x);
 draw_y = ceil(y);

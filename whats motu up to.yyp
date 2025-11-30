@@ -212,6 +212,7 @@
     {"id":{"name":"__InputVibrateClassPulse","path":"scripts/__InputVibrateClassPulse/__InputVibrateClassPulse.yy",},},
     {"id":{"name":"__InputVibrateConfig","path":"scripts/__InputVibrateConfig/__InputVibrateConfig.yy",},},
     {"id":{"name":"__InputVibrateSystem","path":"scripts/__InputVibrateSystem/__InputVibrateSystem.yy",},},
+    {"id":{"name":"BreakSliceBlock","path":"scripts/BreakSliceBlock/BreakSliceBlock.yy",},},
     {"id":{"name":"CheckOnscreen","path":"scripts/CheckOnscreen/CheckOnscreen.yy",},},
     {"id":{"name":"DrawEntity","path":"scripts/DrawEntity/DrawEntity.yy",},},
     {"id":{"name":"GenerateHitBox","path":"scripts/GenerateHitBox/GenerateHitBox.yy",},},

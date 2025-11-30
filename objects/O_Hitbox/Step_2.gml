@@ -120,7 +120,7 @@ switch owner.object_index {
 					}
 					}
 				if instance_place(x,y,O_ShieldParent) {
-					if instance_place(x,y,O_ShieldParent).dead = false {
+					if instance_place(x,y,O_ShieldParent).dead = false and instance_place(x,y,O_ShieldParent).down = true{
 						with instance_place(x,y,O_ShieldParent) {
 							HitAnyone();
 						}
@@ -135,6 +135,17 @@ switch owner.object_index {
 					
 					
 					}
+				if instance_place(x,y,O_SliceBlock) {
+						with  instance_place(x,y,O_SliceBlock) {
+						BreakSliceBlock();	
+						}
+						owner.xspeed = owner.facing*3
+					owner.yspeed = -6
+					owner.boost = true;
+					if owner.downslicing 
+					owner.downslicing = false;
+				}
+					
 				}
 				
 			}

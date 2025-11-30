@@ -168,6 +168,7 @@
     {"name":"__InputVibrateClassPulse","order":5,"path":"scripts/__InputVibrateClassPulse/__InputVibrateClassPulse.yy",},
     {"name":"__InputVibrateConfig","order":2,"path":"scripts/__InputVibrateConfig/__InputVibrateConfig.yy",},
     {"name":"__InputVibrateSystem","order":6,"path":"scripts/__InputVibrateSystem/__InputVibrateSystem.yy",},
+    {"name":"BreakSliceBlock","order":7,"path":"scripts/BreakSliceBlock/BreakSliceBlock.yy",},
     {"name":"CheckOnscreen","order":2,"path":"scripts/CheckOnscreen/CheckOnscreen.yy",},
     {"name":"DrawEntity","order":6,"path":"scripts/DrawEntity/DrawEntity.yy",},
     {"name":"GenerateHitBox","order":4,"path":"scripts/GenerateHitBox/GenerateHitBox.yy",},

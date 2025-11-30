@@ -148,17 +148,21 @@ if abs(xspeed) < 0.25 {
 	}
 	
 if !grounded and InputPressed(INPUT_VERB.DOWN) {
-		if !downslicing {
+		if !downslicing and !place_meeting(x,y+9,[WALL,WALLTILE]) and !place_meeting(x,y+9,O_Wall) {
 			xspeed*= 0.5
 			audio_play_sound(Snd_Slice,0,0,global.sfxvolume*0.35,0,1.3);
 			downslicing = true;	
+		} else {
+			downslicing = false;	
 		}
 	}
+
 if downslicing {
 		sprite_index = S_MotuDownSlice;
 		image_speed = 1;
 		if grounded then downslicing = false;
 	}
 if grounded then boost = false;
+
 
 }
