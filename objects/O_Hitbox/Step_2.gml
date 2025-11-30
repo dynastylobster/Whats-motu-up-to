@@ -1,5 +1,7 @@
 /// @description Insert description here
-// You can write your code in this editor
+// You can write your code in this 
+
+if !global.stoptimer {
 x = owner.x + xoffset
 //y = owner.y + yoffset
 
@@ -94,6 +96,47 @@ switch owner.object_index {
 							}
 						}
 				}
+				
+			if hitboxnum = 1 {
+				if owner.downslicing {
+					if instance_place(x,y,O_EntityParent) {
+						if (instance_place(x,y,O_EntityParent).dead = false) and (instance_place(x,y,O_EntityParent).sliceable = true) {
+						with instance_place(x,y,O_EntityParent) {
+							if global.stoptimer <= 0 {
+							HitAnyone();
+							global.stoptimer = 3;
+							}
+						}
+					instance_create_depth(x+irandom_range(4,10),y+irandom_range(6,8),depth-50,O_SmallExplode)
+					instance_create_depth(x+irandom_range(4,10),y+irandom_range(6,8),depth-50,O_SmallExplode)
+					instance_create_depth(x+irandom_range(4,10),y+irandom_range(6,8),depth-50,O_SmallExplode)
+					
+					owner.xspeed = owner.facing*3
+					owner.yspeed = -6
+					owner.boost = true;
+					if owner.downslicing 
+					owner.downslicing = false;
+					
+					}
+					}
+				if instance_place(x,y,O_ShieldParent) {
+					if instance_place(x,y,O_ShieldParent).dead = false {
+						with instance_place(x,y,O_ShieldParent) {
+							HitAnyone();
+						}
+					if owner.downslicing {
+					owner.xspeed = owner.facing*3
+					owner.yspeed = -6
+					owner.boost = true;
+					if owner.downslicing 
+					owner.downslicing = false;
+						}
+					}
+					
+					
+					}
+				}
+				
 			}
 			
 
@@ -102,4 +145,7 @@ switch owner.object_index {
 	}
 	
 	
+}
+}
+
 }

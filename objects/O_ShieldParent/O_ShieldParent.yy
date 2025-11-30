@@ -1,24 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"O_SliceBlockParticle",
+  "%Name":"O_ShieldParent",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"O_Slice","path":"objects/O_Slice/O_Slice.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"O_SliceBlockParticle",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"O_EntityParent","path":"objects/O_EntityParent/O_EntityParent.yy",},"propertyId":{"name":"sliceable","path":"objects/O_EntityParent/O_EntityParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
-  ],
+  "name":"O_ShieldParent",
+  "overriddenProperties":[],
   "parent":{
-    "name":"Effects",
-    "path":"folders/Objects/Effects.yy",
+    "name":"Don't Place",
+    "path":"folders/Objects/Don't Place.yy",
   },
-  "parentObjectId":{
-    "name":"O_EntityParent",
-    "path":"objects/O_EntityParent/O_EntityParent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -37,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"S_SliceBlockParticle",
-    "path":"sprites/S_SliceBlockParticle/S_SliceBlockParticle.yy",
+    "name":"S_ShieldTest",
+    "path":"sprites/S_ShieldTest/S_ShieldTest.yy",
   },
   "spriteMaskId":null,
   "visible":true,

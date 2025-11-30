@@ -111,13 +111,13 @@ if !grounded and !slicing {
 		if yspeed > 0 {sprite_index = S_MotuJump; image_speed = 0; image_index = 1}
 	}
 
-if !InputCheck(INPUT_VERB.ACCEPT) {
+if !InputCheck(INPUT_VERB.ACCEPT) and !boost{
 		if yspeed < 0 {
 				yspeed*= 0.8
 			}
 	}
 if InputPressed(INPUT_VERB.ACTION) {
-		if !instance_exists(O_Slice) {
+		if !instance_exists(O_Slice) and !downslicing {
 			slicing = true;
 			instance_create_depth(x,y,depth,O_Slice)	
 		}
@@ -146,5 +146,19 @@ if !sloping and !running {
 if abs(xspeed) < 0.25 {
 		xspeed = 0;
 	}
+	
+if !grounded and InputPressed(INPUT_VERB.DOWN) {
+		if !downslicing {
+			xspeed*= 0.5
+			audio_play_sound(Snd_Slice,0,0,global.sfxvolume*0.35,0,1.3);
+			downslicing = true;	
+		}
+	}
+if downslicing {
+		sprite_index = S_MotuDownSlice;
+		image_speed = 1;
+		if grounded then downslicing = false;
+	}
+if grounded then boost = false;
 
 }

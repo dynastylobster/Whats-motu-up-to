@@ -24,7 +24,6 @@ drawpal = int64(pal)
 
 if done_slicing {
 		if pal > 0 {
-			if !audio_is_playing(Snd_SliceHit) then	{audio_play_sound(Snd_SliceHit,0,0,global.sfxvolume,0,random_range(0.95,1.05))}
 			pal -= 0.5
 		}
 	}
