@@ -2,6 +2,8 @@
 mask_index = S_MotuIdle
 depth -= 25
 event_inherited();
+hit = false;
+hittimer = 0;
 draw_x = int64(x);
 draw_y = ceil(y);
 facing = 1;

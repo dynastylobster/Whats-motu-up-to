@@ -1,6 +1,13 @@
 //draw self
 draw_set_font(TinyFont);
 pal_swap_set(S_motupal,BrightPalette,0);
+
+if (!hit) or (hit and hittimer < 60 and hittimer%2 = 0) or (hit and hittimer > 60) {
+
+if hit and hittimer > 60 {
+		pal_swap_set(S_motupal,3+BrightPalette,0);
+	}
+
 draw_sprite_ext(sprite_index,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));
 if O_LevelObject.hassword {
 if sprite_index = S_MotuIdle {draw_sprite_ext(S_MotuIdleSword,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
@@ -9,6 +16,9 @@ if sprite_index = S_MotuWalk {draw_sprite_ext(S_MotuWalkSword,image_index,draw_x
 if sprite_index = S_MotuJump {draw_sprite_ext(S_MotuJumpSword,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
 if sprite_index = S_MotuRun {draw_sprite_ext(S_MotuRunSword,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
 if sprite_index = S_MotuSlice {draw_sprite_ext(S_MotuSliceSword,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
+}
+
+pal_swap_set(S_motupal,BrightPalette,0);
 }
 pal_swap_reset();
 

@@ -152,7 +152,7 @@ if abs(xspeed) < 0.25 {
 		xspeed = 0;
 	}
 	
-if !grounded and InputPressed(INPUT_VERB.DOWN) and (O_LevelObject.hassword = true) {
+if !grounded and InputPressed(INPUT_VERB.DOWN) and (O_LevelObject.hassword = true) and hittimer < 70 {
 		if !downslicing and !place_meeting(x,y+9,[WALL,WALLTILE]) and !place_meeting(x,y+9,O_Wall) {
 			xspeed*= 0.5
 			audio_play_sound(Snd_Slice,0,0,global.sfxvolume*0.35,0,1.3);
@@ -173,5 +173,11 @@ if downslicing {
 	}
 if grounded then boost = false;
 
+if hittimer <= 0 {
+hit = false	
+} else {
+if hittimer > 70 then boost = false;
+hittimer--	
+}
 
 }
