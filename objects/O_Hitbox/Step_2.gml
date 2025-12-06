@@ -59,7 +59,7 @@ switch owner.object_index {
 				case O_Motu: {
 				if hitboxnum = 0 {
 					//active slope mode.
-				while place_meeting(x,y+1,[SLOPE,SLOPETILE]) or place_meeting(x,y+1,O_Slope) and owner.yspeed >= 0 {
+				while place_meeting(x,y+1,[SLOPE,SLOPETILE]) or (place_meeting(x,y+1,O_Slope) and owner.yspeed >= 0) {
 								on = true;
 					with owner {		
 									if !grounded then landingtimer = 4;
@@ -99,7 +99,7 @@ switch owner.object_index {
 			if hitboxnum = 1 {
 				if owner.downslicing {
 					if instance_place(x,y,O_EntityParent) {
-						if (instance_place(x,y,O_EntityParent).dead = false) and (instance_place(x,y,O_EntityParent).sliceable = true) {
+						if (instance_place(x,y,O_EntityParent).dead = false) and (instance_place(x,y,O_EntityParent).sliceable = true) {			
 						with instance_place(x,y,O_EntityParent) {
 							if global.stoptimer <= 0 {
 							HitAnyone();
@@ -112,12 +112,16 @@ switch owner.object_index {
 					
 					owner.xspeed = owner.facing*3
 					owner.yspeed = -6
+					owner.grounded = false;
 					owner.boost = true;
-					if owner.downslicing 
+					if owner.downslicing {
 					owner.downslicing = false;
+					}
+						
 					
 					}
 					}
+					
 				if instance_place(x,y,O_ShieldParent) {
 					if instance_place(x,y,O_ShieldParent).dead = false and instance_place(x,y,O_ShieldParent).down = true{
 						with instance_place(x,y,O_ShieldParent) {
@@ -127,8 +131,9 @@ switch owner.object_index {
 					owner.xspeed = owner.facing*3
 					owner.yspeed = -6
 					owner.boost = true;
-					if owner.downslicing 
+					if owner.downslicing {
 					owner.downslicing = false;
+					}
 						}
 					}
 					
@@ -141,8 +146,9 @@ switch owner.object_index {
 						owner.xspeed = owner.facing*3
 					owner.yspeed = -6
 					owner.boost = true;
-					if owner.downslicing 
+					if owner.downslicing {
 					owner.downslicing = false;
+					}
 				}
 					
 				}

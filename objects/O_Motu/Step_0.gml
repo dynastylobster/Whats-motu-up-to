@@ -22,6 +22,7 @@ if place_meeting(x,y+1,[WALL,WALLTILE]) or place_meeting(x,y+1,O_Wall) or slopin
 		if !sloping then grounded = false;
 			}
 		}
+
 if (!place_meeting(x,y-abs(yspeed),[WALL,WALLTILE]) and !place_meeting(x,y-abs(yspeed),O_Wall) ) and !sloping {
 	
 y+= yspeed
@@ -161,6 +162,7 @@ if !grounded and InputPressed(INPUT_VERB.DOWN) and (O_LevelObject.hassword = tru
 			downslicing = false;	
 		}
 	}
+
 //fix bug that gets the game to stop for some fucking reason
 if place_meeting(x,y+2,[WALL,WALLTILE]) or place_meeting(x,y+2,O_Wall) or place_meeting(x,y+2,O_Slope) or place_meeting(x,y+2,[SLOPE,SLOPETILE]) or place_meeting(x,y+2,[SEMI,SEMITILE]) or place_meeting(x,y+2,O_Semi) {
 		downslicing = false;

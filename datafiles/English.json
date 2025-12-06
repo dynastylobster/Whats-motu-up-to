@@ -1,0 +1,18 @@
+{
+    "language" : "English",
+	"PAUSEMENU" : [
+		"Resume",
+		"Options",
+		"Exit to title"
+	],
+	"OPTIONSMENU" : [
+		"Music Volume:",
+		"SFX Volume",
+		"Back"
+	],
+    "NPC1" : [
+        "Testing now!", 
+        "Are you sure this is a test?"
+    ],
+    "NPC2" : ["is that my fucking mom"]
+}
