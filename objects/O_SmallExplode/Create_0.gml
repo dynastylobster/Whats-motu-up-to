@@ -5,5 +5,6 @@ speed = 0;
 brightoffset = 4;
 hittimer = 0;
 deathtimer = irandom_range(10,15);
+mask_index = S_Empty;
 //grav = 0.125
 //yspeed = 0;
