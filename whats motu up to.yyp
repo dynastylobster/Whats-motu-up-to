@@ -105,6 +105,7 @@
     {"id":{"name":"O_HitBoxTest","path":"objects/O_HitBoxTest/O_HitBoxTest.yy",},},
     {"id":{"name":"O_LevelObject","path":"objects/O_LevelObject/O_LevelObject.yy",},},
     {"id":{"name":"O_Motu","path":"objects/O_Motu/O_Motu.yy",},},
+    {"id":{"name":"O_NPC","path":"objects/O_NPC/O_NPC.yy",},},
     {"id":{"name":"O_OnScreenTest","path":"objects/O_OnScreenTest/O_OnScreenTest.yy",},},
     {"id":{"name":"O_ScrewParticle","path":"objects/O_ScrewParticle/O_ScrewParticle.yy",},},
     {"id":{"name":"O_Semi","path":"objects/O_Semi/O_Semi.yy",},},

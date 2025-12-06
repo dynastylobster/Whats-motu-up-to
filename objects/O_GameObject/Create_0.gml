@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+global.lang = "English"
+
 global.sfxvolume = 0.75;
 global.debugmode = false;
 global.stop = false;
