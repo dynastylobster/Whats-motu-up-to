@@ -1,3 +1,4 @@
+depth -= 50;
 pal = choose(0,1,2,3);
 currentpal = choose(0,1,2,3);
 initialpalette = currentpal;
