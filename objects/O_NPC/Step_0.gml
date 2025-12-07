@@ -3,4 +3,6 @@ if InputPressed(INPUT_VERB.UP) {
     if textentry >= array_length(text) {
         textentry = 0;
     }
+finalText = "";
+sentence = string(text[textentry]);
 }

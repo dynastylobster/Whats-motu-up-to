@@ -80,7 +80,7 @@
     {"name":"O_HitBoxTest","order":8,"path":"objects/O_HitBoxTest/O_HitBoxTest.yy",},
     {"name":"O_LevelObject","order":6,"path":"objects/O_LevelObject/O_LevelObject.yy",},
     {"name":"O_Motu","order":7,"path":"objects/O_Motu/O_Motu.yy",},
-    {"name":"O_NPC","order":9,"path":"objects/O_NPC/O_NPC.yy",},
+    {"name":"O_NPC","order":1,"path":"objects/O_NPC/O_NPC.yy",},
     {"name":"O_OnScreenTest","order":2,"path":"objects/O_OnScreenTest/O_OnScreenTest.yy",},
     {"name":"O_Semi","order":3,"path":"objects/O_Semi/O_Semi.yy",},
     {"name":"O_ShieldParent","order":4,"path":"objects/O_ShieldParent/O_ShieldParent.yy",},
