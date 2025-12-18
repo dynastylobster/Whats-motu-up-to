@@ -1,3 +1,4 @@
+if grounded {global.scoremultiplier = 1;}
 if landingtimer > 0 {
 		global.stoptimer = 0
 	}

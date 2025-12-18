@@ -125,7 +125,7 @@ switch owner.object_index {
 				if instance_place(x,y,O_ShieldParent) {
 					if instance_place(x,y,O_ShieldParent).dead = false and instance_place(x,y,O_ShieldParent).down = true{
 						with instance_place(x,y,O_ShieldParent) {
-							HitAnyone();
+							HitAnyoneNoScore();
 						}
 					if owner.downslicing {
 					owner.xspeed = owner.facing*3
