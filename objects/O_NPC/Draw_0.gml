@@ -1,8 +1,8 @@
 //text[textentry] is the actual thing that shows up!!
 
-
+pal_swap_set(global.enemypal,textcolor,false)
 //var finalText = ""
-
+draw_set_font(global.scorefont)
 
 if crawling and !global.stop {
 timer++;
@@ -18,3 +18,4 @@ timer = 0;
 }
 
 draw_text(x,y,finalText)
+pal_swap_reset();

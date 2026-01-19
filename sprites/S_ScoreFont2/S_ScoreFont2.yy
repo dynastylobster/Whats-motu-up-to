@@ -34,8 +34,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Palettes",
-    "path":"folders/Sprites/Palettes.yy",
+    "name":"Hud sprites",
+    "path":"folders/Sprites/Hud sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

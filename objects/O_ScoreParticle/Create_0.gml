@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+depth = 25
 pal = choose(0,1,2,3);
 score = 200*global.scoremultiplier
 currentpal = choose(0,1,2,3);
