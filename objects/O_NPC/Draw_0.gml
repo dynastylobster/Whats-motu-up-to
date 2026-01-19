@@ -1,6 +1,6 @@
 //text[textentry] is the actual thing that shows up!!
-
-pal_swap_set(global.enemypal,textcolor,false)
+brightoffset = (O_LevelObject.BrightSprites*4)
+pal_swap_set(global.enemypal,textcolor+brightoffset,false)
 //var finalText = ""
 draw_set_font(global.scorefont)
 

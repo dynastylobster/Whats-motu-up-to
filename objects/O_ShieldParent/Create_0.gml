@@ -1,3 +1,4 @@
+brightoffset = 0;
 onscreen = false;
 CheckOnscreen(true,true);
 owner = noone;
