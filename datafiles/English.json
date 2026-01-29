@@ -14,5 +14,10 @@
         "Testing now!", 
         "Are you sure this is a test?"
     ],
-    "NPC2" : ["is that my fucking mom"]
+    "NPC2" : [
+	"is that my fucking mom"
+	],
+	"PostCredits" : [
+		"Dedicated to Plourples./nI have hurt you so much.../nFinishing this game one day/nis the least I could do to make up for it."
+	]
 }
