@@ -6,3 +6,7 @@ draw_x = x
 hit = false;
 brightoffset = 0;
 currentpal = initialpalette;
+if instance_exists(O_LevelObject) {
+		sprite_index = O_LevelObject.SliceBlockSprite
+		currentpal = O_LevelObject.SliceBlockpal
+	}

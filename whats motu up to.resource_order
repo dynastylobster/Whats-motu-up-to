@@ -408,6 +408,7 @@
     {"name":"S_ShieldTest","order":3,"path":"sprites/S_ShieldTest/S_ShieldTest.yy",},
     {"name":"S_Slice","order":1,"path":"sprites/S_Slice/S_Slice.yy",},
     {"name":"S_SliceBlock","order":2,"path":"sprites/S_SliceBlock/S_SliceBlock.yy",},
+    {"name":"S_SliceBlockCrate","order":4,"path":"sprites/S_SliceBlockCrate/S_SliceBlockCrate.yy",},
     {"name":"S_SliceBlockParticle","order":3,"path":"sprites/S_SliceBlockParticle/S_SliceBlockParticle.yy",},
     {"name":"S_SlicePal","order":2,"path":"sprites/S_SlicePal/S_SlicePal.yy",},
     {"name":"S_Slope","order":3,"path":"sprites/S_Slope/S_Slope.yy",},

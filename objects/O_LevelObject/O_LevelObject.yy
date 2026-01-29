@@ -46,6 +46,8 @@
     {"$GMObjectProperty":"v1","%Name":"BrightSprites","filters":[],"listItems":[],"multiselect":false,"name":"BrightSprites","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"hassword","filters":[],"listItems":[],"multiselect":false,"name":"hassword","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"hpdrawx","filters":[],"listItems":[],"multiselect":false,"name":"hpdrawx","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"SliceBlockSprite","filters":[],"listItems":[],"multiselect":false,"name":"SliceBlockSprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"S_SliceBlock","path":"sprites/S_SliceBlock/S_SliceBlock.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"S_SliceBlock","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"SliceBlockpal","filters":[],"listItems":[],"multiselect":false,"name":"SliceBlockpal","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
