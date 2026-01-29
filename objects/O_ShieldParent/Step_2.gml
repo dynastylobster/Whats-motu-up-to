@@ -1,4 +1,6 @@
 // Inherit the parent event
+x = owner.x+xoffset
+y = owner.y+yoffset
 CheckOnscreen(true,true);
 if global.brightsprites {
 		brightoffset = 4;

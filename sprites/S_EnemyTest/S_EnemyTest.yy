@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"S_EnemyTest",
   "bboxMode":2,
-  "bbox_bottom":28,
+  "bbox_bottom":27,
   "bbox_left":2,
   "bbox_right":28,
   "bbox_top":11,

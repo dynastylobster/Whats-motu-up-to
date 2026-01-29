@@ -99,6 +99,7 @@
     {"id":{"name":"__InputUpdateController","path":"objects/__InputUpdateController/__InputUpdateController.yy",},},
     {"id":{"name":"O_All","path":"objects/O_All/O_All.yy",},},
     {"id":{"name":"O_CoinFlip","path":"objects/O_CoinFlip/O_CoinFlip.yy",},},
+    {"id":{"name":"O_EnemyParent","path":"objects/O_EnemyParent/O_EnemyParent.yy",},},
     {"id":{"name":"O_EntityParent","path":"objects/O_EntityParent/O_EntityParent.yy",},},
     {"id":{"name":"O_ExplodeEffect","path":"objects/O_ExplodeEffect/O_ExplodeEffect.yy",},},
     {"id":{"name":"O_GameObject","path":"objects/O_GameObject/O_GameObject.yy",},},
