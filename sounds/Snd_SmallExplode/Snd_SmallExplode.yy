@@ -12,8 +12,8 @@
   "duration":0.15594104,
   "name":"Snd_SmallExplode",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"sfx",
+    "path":"folders/Sounds/sfx.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

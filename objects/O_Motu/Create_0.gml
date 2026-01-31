@@ -1,4 +1,5 @@
 // Inherit the parent event
+//was just for the video {audio_play_sound(MusFactory,0,true,1,0,1);}
 mask_index = S_MotuIdle
 depth -= 25
 event_inherited();

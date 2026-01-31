@@ -12,8 +12,8 @@
   "duration":0.28111112,
   "name":"Snd_Land",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"sfx",
+    "path":"folders/Sounds/sfx.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

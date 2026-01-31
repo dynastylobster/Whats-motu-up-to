@@ -12,8 +12,8 @@
   "duration":0.29482993,
   "name":"Snd_Slice",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"sfx",
+    "path":"folders/Sounds/sfx.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
