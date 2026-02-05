@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if instance_exists(O_Motu) {
+if instance_exists(O_Player) {
 	
 var scorex = (CAM_X) + (CAM_W/2)
 draw_set_halign(fa_center)

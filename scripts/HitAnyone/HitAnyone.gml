@@ -9,8 +9,8 @@ function HitAnyone(){
 			mask_index = S_Empty;	
 		}
 	}
-	if instance_exists(O_Motu) {
-		with O_Motu {
+	if instance_exists(O_Player) {
+		with O_Player {
 			running = true;	
 		}
 	}

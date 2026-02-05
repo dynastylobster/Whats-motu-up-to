@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Motu Sprites",
-    "path":"folders/Sprites/Motu Sprites.yy",
+    "name":"Motu",
+    "path":"folders/Sprites/Player Sprites/Motu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

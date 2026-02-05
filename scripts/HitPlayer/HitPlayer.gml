@@ -1,10 +1,10 @@
 function HitPlayer(){
-	if instance_exists(O_Motu) and !global.stop {
-	if O_Motu.hit = false {
-		O_Motu.hittimer = 90;
-		O_Motu.yspeed = -3
-		O_Motu.hp -= 1;
-		O_Motu.hit = true;
+	if instance_exists(O_Player) and !global.stop {
+	if O_Player.hit = false {
+		O_Player.hittimer = 90;
+		O_Player.yspeed = -3
+		O_Player.hp -= 1;
+		O_Player.hit = true;
 	}
 	}
 }

@@ -35,7 +35,7 @@ y+= yspeed
 
 
 if grounded or coyotetime > 0 {
-if sprite_index = S_MotuJump then sprite_index = S_MotuRun;
+if sprite_index = jumpsprite then sprite_index = runsprite;
 if InputPressed(INPUT_VERB.ACCEPT) {
 	audio_play_sound(Snd_Jump,0,0,global.sfxvolume*1.25,0,1);
 		yspeed = -jumpspeed
@@ -85,13 +85,13 @@ if InputPressed(INPUT_VERB.ACCEPT) {
 			}
 			
 		if !running and !slicing {
-			if abs(xspeed) > 0 {sprite_index = S_MotuWalk; image_speed = 1}
-			if xspeed = 0 {sprite_index = S_MotuIdle; image_speed = 0;}
+			if abs(xspeed) > 0 {sprite_index = walksprite; image_speed = 1}
+			if xspeed = 0 {sprite_index = idlesprite; image_speed = 0;}
 		}
 		
 		if running and !slicing {
-			if abs(xspeed) > 0 {sprite_index = S_MotuRun; image_speed = 1}
-			if xspeed = 0 {sprite_index = S_MotuIdle; image_speed = 0;}
+			if abs(xspeed) > 0 {sprite_index = runsprite; image_speed = 1}
+			if xspeed = 0 {sprite_index = idlesprite; image_speed = 0;}
 		}
 
 if !place_meeting(x+xspeed+(1*sign(xspeed)),y,[WALL,WALLTILE]) and !place_meeting(x+xspeed+(1*sign(xspeed)),y,O_Wall){
@@ -114,8 +114,8 @@ if place_meeting(x,y+2,[SEMI,SEMITILE]) or place_meeting(x,y+2,O_Semi){
 	}
 
 if !grounded and !slicing {
-		if yspeed < 0 {sprite_index = S_MotuJump; image_speed = 0; image_index = 0}
-		if yspeed > 0 {sprite_index = S_MotuJump; image_speed = 0; image_index = 1}
+		if yspeed < 0 {sprite_index = jumpsprite; image_speed = 0; image_index = 0}
+		if yspeed > 0 {sprite_index = jumpsprite; image_speed = 0; image_index = 1}
 	}
 
 if !InputCheck(INPUT_VERB.ACCEPT) and !boost{
@@ -135,9 +135,9 @@ if InputPressed(INPUT_VERB.ACTION) {
 		audio_play_sound(Snd_Land,0,0,global.sfxvolume,0,random_range(1,1.2))	
 		}
 		landingtimer--
-		sprite_index = S_MotuLand
+		sprite_index = landsprite
 	}
-if slicing {landingtimer = 0;sprite_index = S_MotuSlice}
+if slicing {landingtimer = 0;sprite_index = slicesprite}
 
 //undo speed gained by slopes
 if !sloping and !running {
@@ -170,7 +170,7 @@ if place_meeting(x,y+2,[WALL,WALLTILE]) or place_meeting(x,y+2,O_Wall) or place_
 	}
 
 if downslicing {
-		sprite_index = S_MotuDownSlice;
+		sprite_index = downslicesprite;
 		image_speed = 1;
 		if grounded then downslicing = false;
 	}

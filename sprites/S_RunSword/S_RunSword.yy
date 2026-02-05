@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"S_MotuRunSword",
+  "%Name":"S_RunSword",
   "bboxMode":2,
   "bbox_bottom":23,
   "bbox_left":7,
@@ -24,19 +24,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"67250bf9-9c70-40ac-91c5-51ad86268d7c","blendMode":0,"displayName":"default","isLocked":false,"name":"67250bf9-9c70-40ac-91c5-51ad86268d7c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"S_MotuRunSword",
+  "name":"S_RunSword",
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Motu Sprites",
-    "path":"folders/Sprites/Motu Sprites.yy",
+    "name":"Sword",
+    "path":"folders/Sprites/Player Sprites/Weapons/Sword.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"S_MotuRunSword",
+    "%Name":"S_RunSword",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -60,7 +60,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"S_MotuRunSword",
+    "name":"S_RunSword",
     "playback":1,
     "playbackSpeed":16.0,
     "playbackSpeedType":0,
@@ -74,16 +74,16 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"21bec897-0a48-4e54-ba5f-c1fce00b750d","path":"sprites/S_MotuRunSword/S_MotuRunSword.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"21bec897-0a48-4e54-ba5f-c1fce00b750d","path":"sprites/S_RunSword/S_RunSword.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"22aaa17e-123b-46ed-90b3-605279b76fb5","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"20089b02-7648-4ec8-94a5-bcec580ddfcd","path":"sprites/S_MotuRunSword/S_MotuRunSword.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"20089b02-7648-4ec8-94a5-bcec580ddfcd","path":"sprites/S_RunSword/S_RunSword.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"c223f526-c50e-4060-afc6-69d23fc72bdc","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cbd16bf5-5c1c-4da2-8f38-7291c1bc4cbb","path":"sprites/S_MotuRunSword/S_MotuRunSword.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cbd16bf5-5c1c-4da2-8f38-7291c1bc4cbb","path":"sprites/S_RunSword/S_RunSword.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"c44e83ca-5007-4393-82ec-4a8db96798d4","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6d5a8173-96e8-4419-b0ec-d26c76bdaec6","path":"sprites/S_MotuRunSword/S_MotuRunSword.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6d5a8173-96e8-4419-b0ec-d26c76bdaec6","path":"sprites/S_RunSword/S_RunSword.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"f79d69f6-7f0d-4db5-b565-0dd1ab9c166c","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

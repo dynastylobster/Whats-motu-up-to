@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+global.character = "Motu"
+
 global.score = 0;
 global.scoremultiplier = 1;
 global.lang = "English"

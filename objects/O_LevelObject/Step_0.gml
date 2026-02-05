@@ -8,7 +8,7 @@ switch CameraMode {
     break;
 
     case "Motu": {
-    if (instance_exists(O_Motu)) {
+    if (instance_exists(O_Player)) {
         
         // Walls when standing still
         var _base_L = (CAM_W / 2) - 32;
@@ -27,11 +27,11 @@ switch CameraMode {
         var _target_shift = 0;
         
         // Only change the target if the player is moving.
-        if (O_Motu.xspeed > 0.1) {
+        if (O_Player.xspeed > 0.1) {
             // Moving Right? Shift walls Left (negative) so we see more Right.
             _target_shift = -_shift_amount;
         } 
-        else if (O_Motu.xspeed < -0.1) {
+        else if (O_Player.xspeed < -0.1) {
             // Moving Left? Shift walls Right (positive) so we see more Left.
             _target_shift = _shift_amount;
         }
@@ -51,13 +51,13 @@ switch CameraMode {
 
 
         // If player is outside the right wall, drag camera right
-        if (O_Motu.x > cam_r) {
-            cam_x += (O_Motu.x - cam_r);
+        if (O_Player.x > cam_r) {
+            cam_x += (O_Player.x - cam_r);
         }
         
         // If player is outside the left wall, drag camera left
-        if (O_Motu.x < cam_l) {
-            cam_x -= (cam_l - O_Motu.x);
+        if (O_Player.x < cam_l) {
+            cam_x -= (cam_l - O_Player.x);
         }
 
 
@@ -65,8 +65,8 @@ switch CameraMode {
         var _cam_top = cam_y + (CAM_H / 2) - 48;
         var _cam_bot = cam_y + (CAM_H / 2) + 48;
         
-        if (O_Motu.y > _cam_bot) cam_y += (O_Motu.y - _cam_bot);
-        if (O_Motu.y < _cam_top) cam_y -= (_cam_top - O_Motu.y);
+        if (O_Player.y > _cam_bot) cam_y += (O_Player.y - _cam_bot);
+        if (O_Player.y < _cam_top) cam_y -= (_cam_top - O_Player.y);
 
         // Room Clamping
         cam_x = clamp(cam_x, 0, room_width - CAM_W);

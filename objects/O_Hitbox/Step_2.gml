@@ -56,7 +56,7 @@ switch owner.object_index {
 		}
 		break;
 		
-				case O_Motu: {
+				case O_Player: {
 				if hitboxnum = 0 {
 					//active slope mode.
 				while place_meeting(x,y+1,[SLOPE,SLOPETILE]) or (place_meeting(x,y+1,O_Slope) and owner.yspeed >= 0) {

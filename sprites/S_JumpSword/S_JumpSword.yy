@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"S_MotuIdleSword",
+  "%Name":"S_JumpSword",
   "bboxMode":2,
   "bbox_bottom":23,
   "bbox_left":7,
@@ -12,28 +12,29 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c71b36f4-09a7-44e8-9d09-5c3dd4424521","name":"c71b36f4-09a7-44e8-9d09-5c3dd4424521","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"21bec897-0a48-4e54-ba5f-c1fce00b750d","name":"21bec897-0a48-4e54-ba5f-c1fce00b750d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"20089b02-7648-4ec8-94a5-bcec580ddfcd","name":"20089b02-7648-4ec8-94a5-bcec580ddfcd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":24,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"36601fb5-22e1-4241-845c-19a2126477bc","blendMode":0,"displayName":"default","isLocked":false,"name":"36601fb5-22e1-4241-845c-19a2126477bc","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"67250bf9-9c70-40ac-91c5-51ad86268d7c","blendMode":0,"displayName":"default","isLocked":false,"name":"67250bf9-9c70-40ac-91c5-51ad86268d7c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"S_MotuIdleSword",
+  "name":"S_JumpSword",
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Motu Sprites",
-    "path":"folders/Sprites/Motu Sprites.yy",
+    "name":"Sword",
+    "path":"folders/Sprites/Player Sprites/Weapons/Sword.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"S_MotuIdleSword",
+    "%Name":"S_JumpSword",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -49,7 +50,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":2.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -57,9 +58,9 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"S_MotuIdleSword",
+    "name":"S_JumpSword",
     "playback":1,
-    "playbackSpeed":10.0,
+    "playbackSpeed":16.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -71,8 +72,11 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c71b36f4-09a7-44e8-9d09-5c3dd4424521","path":"sprites/S_MotuIdleSword/S_MotuIdleSword.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b6ad05a5-130d-4abe-bc67-eb79d5ebfdae","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"21bec897-0a48-4e54-ba5f-c1fce00b750d","path":"sprites/S_JumpSword/S_JumpSword.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"22aaa17e-123b-46ed-90b3-605279b76fb5","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"20089b02-7648-4ec8-94a5-bcec580ddfcd","path":"sprites/S_JumpSword/S_JumpSword.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c223f526-c50e-4060-afc6-69d23fc72bdc","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

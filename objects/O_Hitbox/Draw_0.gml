@@ -11,7 +11,7 @@ draw_rectangle(bbox_left,bbox_top-0.25,bbox_right,bbox_bottom-0.25,true);
 draw_rectangle(bbox_left,bbox_top-0.25,bbox_right,bbox_bottom-0.25,true);
 draw_set_color(c_white)
 //draw_text(x,y,string(owner))
-	if owner.object_index = O_Motu and hitboxnum = 0 {
+	if owner.object_index = O_Player and hitboxnum = 0 {
 		draw_line(x,y+4,x+owner.facing*4,y+4)	
 		draw_set_color(c_grey)
 		draw_line(x,y+4,x-owner.facing*4,y+4)	

@@ -13,8 +13,10 @@ slicing = false;
 landingtimer = 0;
 downslicing = false;
 boost = false;
-GenerateHitBox(x,y,1,5,-2,7,O_Motu,0,true);
-GenerateHitBox(x,y,12,12,-7,8,O_Motu,1,true);
+GenerateHitBox(x,y,1,5,-2,7,O_Player,0,true);
+GenerateHitBox(x,y,12,12,-7,8,O_Player,1,true);
 if global.brightsprites = true {
 		BrightPalette = true;
 	}
+//initializesprites
+SetCostumes()
