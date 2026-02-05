@@ -5,6 +5,7 @@ function HitPlayer(){
 		O_Player.yspeed = -3
 		O_Player.hp -= 1;
 		O_Player.hit = true;
+		global.stoptimer = 5
 	}
 	}
 }

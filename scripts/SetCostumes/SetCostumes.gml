@@ -7,6 +7,7 @@ function SetCostumes(){
 		case "Motu":
 			
 		with O_Player {
+		slicepaloffs = 0;
 		palsprite = S_motupal
 		idlesprite = S_MotuIdle
 		walksprite = S_MotuWalk
@@ -19,11 +20,15 @@ function SetCostumes(){
 		
 		break;
 		case "Billy":
-		
+		with O_Player {
+		slicepaloffs = 4
+		}
 		break;
 
 		case "Banan":
-		
+		with O_Player {
+		slicepaloffs = 8
+		}
 		break;
 	}
 	
