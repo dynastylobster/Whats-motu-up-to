@@ -1,21 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"O_SliceBlockParticle",
+  "%Name":"O_Gem",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"O_Slice","path":"objects/O_Slice/O_Slice.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"O_SliceBlockParticle",
+  "name":"O_Gem",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"O_EntityParent","path":"objects/O_EntityParent/O_EntityParent.yy",},"propertyId":{"name":"sliceable","path":"objects/O_EntityParent/O_EntityParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"O_EntityParent","path":"objects/O_EntityParent/O_EntityParent.yy",},"propertyId":{"name":"mask_index","path":"objects/O_EntityParent/O_EntityParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"S_Empty",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"O_EntityParent","path":"objects/O_EntityParent/O_EntityParent.yy",},"propertyId":{"name":"floorcolission","path":"objects/O_EntityParent/O_EntityParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
   ],
   "parent":{
-    "name":"Effects",
-    "path":"folders/Objects/Effects.yy",
+    "name":"Items",
+    "path":"folders/Objects/Items.yy",
   },
   "parentObjectId":{
     "name":"O_EntityParent",
@@ -39,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"S_SliceBlockParticle",
-    "path":"sprites/S_SliceBlockParticle/S_SliceBlockParticle.yy",
+    "name":"S_Gem",
+    "path":"sprites/S_Gem/S_Gem.yy",
   },
   "spriteMaskId":null,
   "visible":true,

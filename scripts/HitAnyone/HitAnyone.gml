@@ -18,11 +18,6 @@ if !audio_is_playing(Snd_SliceHit) then	{audio_play_sound(Snd_SliceHit,0,0,globa
 var parent =  object_get_parent(object_index) 
 
 if !hit {
-	if parent != O_ShieldParent {
-global.score += 200 * global.scoremultiplier
-global.scoremultiplier *= 2
-instance_create_depth(x,y,depth-50,O_ScoreParticle)
-	}
 
 }
 hit = true;

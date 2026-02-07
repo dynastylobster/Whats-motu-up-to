@@ -43,6 +43,8 @@
     {"$GMObjectProperty":"v1","%Name":"brightoffset","filters":[],"listItems":[],"multiselect":false,"name":"brightoffset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"4","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"hittimer","filters":[],"listItems":[],"multiselect":false,"name":"hittimer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"mask_index","filters":[],"listItems":[],"multiselect":false,"name":"mask_index","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sprite_index","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"floorcolission","filters":[],"listItems":[],"multiselect":false,"name":"floorcolission","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"immunedown","filters":[],"listItems":[],"multiselect":false,"name":"immunedown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

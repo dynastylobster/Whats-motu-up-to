@@ -99,7 +99,7 @@ switch owner.object_index {
 			if hitboxnum = 1 {
 				if owner.downslicing {
 					if instance_place(x,y,O_EntityParent) {
-						if (instance_place(x,y,O_EntityParent).dead = false) and (instance_place(x,y,O_EntityParent).sliceable = true) {			
+						if (instance_place(x,y,O_EntityParent).dead = false) and (instance_place(x,y,O_EntityParent).sliceable = true) and (instance_place(x,y,O_EntityParent).immunedown = false){			
 						with instance_place(x,y,O_EntityParent) {
 							if global.stoptimer <= 0 {
 							HitAnyone();
@@ -120,24 +120,6 @@ switch owner.object_index {
 						
 					
 					}
-					}
-					
-				if instance_place(x,y,O_ShieldParent) {
-					if instance_place(x,y,O_ShieldParent).dead = false and instance_place(x,y,O_ShieldParent).down = true{
-						with instance_place(x,y,O_ShieldParent) {
-							HitAnyoneNoScore();
-						}
-					if owner.downslicing {
-					owner.xspeed = owner.facing*3
-					owner.yspeed = -6
-					owner.boost = true;
-					if owner.downslicing {
-					owner.downslicing = false;
-					}
-						}
-					}
-					
-					
 					}
 				if instance_place(x,y,O_SliceBlock) {
 						with  instance_place(x,y,O_SliceBlock) {
