@@ -134,6 +134,7 @@
     {"id":{"name":"O_SmallExplode","path":"objects/O_SmallExplode/O_SmallExplode.yy",},},
     {"id":{"name":"O_Wall","path":"objects/O_Wall/O_Wall.yy",},},
     {"id":{"name":"R_Boot","path":"rooms/R_Boot/R_Boot.yy",},},
+    {"id":{"name":"R_FactoryTileMap","path":"rooms/R_FactoryTileMap/R_FactoryTileMap.yy",},},
     {"id":{"name":"R_Test","path":"rooms/R_Test/R_Test.yy",},},
     {"id":{"name":"__InputBindingIsThumbstick","path":"scripts/__InputBindingIsThumbstick/__InputBindingIsThumbstick.yy",},},
     {"id":{"name":"__InputBindingScan","path":"scripts/__InputBindingScan/__InputBindingScan.yy",},},
@@ -515,6 +516,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"R_Boot","path":"rooms/R_Boot/R_Boot.yy",},},
     {"roomId":{"name":"R_Test","path":"rooms/R_Test/R_Test.yy",},},
+    {"roomId":{"name":"R_FactoryTileMap","path":"rooms/R_FactoryTileMap/R_FactoryTileMap.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
