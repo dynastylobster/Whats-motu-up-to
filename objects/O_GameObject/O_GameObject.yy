@@ -37,29 +37,29 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"AspectRatioMode","filters":[],"listItems":[
+    {"$GMObjectProperty":"v2","%Name":"AspectRatioMode","filters":[],"listItems":[
         "\"Fixed\"",
         "\"Dynamic\"",
       ],"multiselect":false,"name":"AspectRatioMode","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Fixed\"","varType":6,},
-    {"$GMObjectProperty":"v1","%Name":"DefaultViewWidth","filters":[],"listItems":[],"multiselect":false,"name":"DefaultViewWidth","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"360","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"DefaultViewHeight","filters":[],"listItems":[],"multiselect":false,"name":"DefaultViewHeight","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"240","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"FilterMode","filters":[],"listItems":[
+    {"$GMObjectProperty":"v2","%Name":"DefaultViewWidth","filters":[],"listItems":[],"multiselect":false,"name":"DefaultViewWidth","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"360","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"DefaultViewHeight","filters":[],"listItems":[],"multiselect":false,"name":"DefaultViewHeight","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"240","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"FilterMode","filters":[],"listItems":[
         "\"Sharp Bilinear\"",
         "\"Bilinear\"",
         "\"Nearest\"",
       ],"multiselect":false,"name":"FilterMode","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Sharp Bilinear\"","varType":6,},
-    {"$GMObjectProperty":"v1","%Name":"ViewWidth","filters":[],"listItems":[],"multiselect":false,"name":"ViewWidth","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"DefaultViewWidth","varType":4,},
-    {"$GMObjectProperty":"v1","%Name":"ViewHeight","filters":[],"listItems":[],"multiselect":false,"name":"ViewHeight","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"DefaultViewHeight","varType":4,},
-    {"$GMObjectProperty":"v1","%Name":"WindowScale","filters":[],"listItems":[],"multiselect":false,"name":"WindowScale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":1,},
-    {"$GMObjectProperty":"v1","%Name":"MaxWindowScale","filters":[],"listItems":[],"multiselect":false,"name":"MaxWindowScale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5","varType":1,},
-    {"$GMObjectProperty":"v1","%Name":"FixedRatio","filters":[],"listItems":[
+    {"$GMObjectProperty":"v2","%Name":"ViewWidth","filters":[],"listItems":[],"multiselect":false,"name":"ViewWidth","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"DefaultViewWidth","varType":4,},
+    {"$GMObjectProperty":"v2","%Name":"ViewHeight","filters":[],"listItems":[],"multiselect":false,"name":"ViewHeight","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"DefaultViewHeight","varType":4,},
+    {"$GMObjectProperty":"v2","%Name":"WindowScale","filters":[],"listItems":[],"multiselect":false,"name":"WindowScale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"MaxWindowScale","filters":[],"listItems":[],"multiselect":false,"name":"MaxWindowScale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"FixedRatio","filters":[],"listItems":[
         "[16,9]",
         "[4,3]",
         "[16,10]",
       ],"multiselect":false,"name":"FixedRatio","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[4,3]","varType":6,},
-    {"$GMObjectProperty":"v1","%Name":"OutOfScreenBuffer","filters":[],"listItems":[],"multiselect":false,"name":"OutOfScreenBuffer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"16","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"TargFPS","filters":[],"listItems":[],"multiselect":false,"name":"TargFPS","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"60","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"TilesetWidth","filters":[],"listItems":[],"multiselect":false,"name":"TilesetWidth","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"16","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"OutOfScreenBuffer","filters":[],"listItems":[],"multiselect":false,"name":"OutOfScreenBuffer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"16","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"TargFPS","filters":[],"listItems":[],"multiselect":false,"name":"TargFPS","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"60","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"TilesetWidth","filters":[],"listItems":[],"multiselect":false,"name":"TilesetWidth","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"16","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

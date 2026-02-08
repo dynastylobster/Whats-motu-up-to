@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+if isenemy {
 if !global.stop {
 		
 	if hasgravity {
@@ -22,3 +23,4 @@ if !global.stop {
 		}
 		
 	}
+}
