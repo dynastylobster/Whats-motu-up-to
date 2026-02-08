@@ -41,7 +41,7 @@
         "\"Fixed\"",
         "\"Dynamic\"",
       ],"multiselect":false,"name":"AspectRatioMode","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Fixed\"","varType":6,},
-    {"$GMObjectProperty":"v2","%Name":"DefaultViewWidth","filters":[],"listItems":[],"multiselect":false,"name":"DefaultViewWidth","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"360","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"DefaultViewWidth","filters":[],"listItems":[],"multiselect":false,"name":"DefaultViewWidth","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"320","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"DefaultViewHeight","filters":[],"listItems":[],"multiselect":false,"name":"DefaultViewHeight","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"240","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"FilterMode","filters":[],"listItems":[
         "\"Sharp Bilinear\"",
