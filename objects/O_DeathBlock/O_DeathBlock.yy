@@ -10,7 +10,10 @@
   ],
   "managed":true,
   "name":"O_DeathBlock",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"O_EntityParent","path":"objects/O_EntityParent/O_EntityParent.yy",},"propertyId":{"name":"immunedown","path":"objects/O_EntityParent/O_EntityParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"O_EntityParent","path":"objects/O_EntityParent/O_EntityParent.yy",},"propertyId":{"name":"immuneside","path":"objects/O_EntityParent/O_EntityParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+  ],
   "parent":{
     "name":"Common",
     "path":"folders/Objects/Common.yy",
