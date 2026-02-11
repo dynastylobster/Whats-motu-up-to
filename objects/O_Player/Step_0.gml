@@ -1,3 +1,7 @@
+//weapons stuff
+
+
+
 if grounded {global.scoremultiplier = 1;}
 if landingtimer > 0 {
 		global.stoptimer = 0
@@ -47,7 +51,10 @@ if InputPressed(INPUT_VERB.ACCEPT) {
 			y-= 0.125
 		}
 	if !InputCheck(INPUT_VERB.RIGHT) and !InputCheck(INPUT_VERB.LEFT) {
+		if !InputCheck(INPUT_VERB.ACTION) {
 		running = false;
+		}
+		
 		if xspeed > 0 xspeed -= accel 
 		if xspeed < 0 xspeed += accel
 	}

@@ -187,7 +187,7 @@
     {"name":"CheckOnscreen","order":2,"path":"scripts/CheckOnscreen/CheckOnscreen.yy",},
     {"name":"DrawEntity","order":6,"path":"scripts/DrawEntity/DrawEntity.yy",},
     {"name":"GenerateHitBox","order":4,"path":"scripts/GenerateHitBox/GenerateHitBox.yy",},
-    {"name":"HitAnyone","order":5,"path":"scripts/HitAnyone/HitAnyone.yy",},
+    {"name":"HitAnyone","order":12,"path":"scripts/HitAnyone/HitAnyone.yy",},
     {"name":"HitAnyoneNoScore","order":10,"path":"scripts/HitAnyoneNoScore/HitAnyoneNoScore.yy",},
     {"name":"HitPlayer","order":8,"path":"scripts/HitPlayer/HitPlayer.yy",},
     {"name":"InputBindingFindCollisions","order":1,"path":"scripts/InputBindingFindCollisions/InputBindingFindCollisions.yy",},

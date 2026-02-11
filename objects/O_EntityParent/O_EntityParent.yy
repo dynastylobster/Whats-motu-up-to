@@ -56,6 +56,8 @@
     {"$GMObjectProperty":"v2","%Name":"grav","filters":[],"listItems":[],"multiselect":false,"name":"grav","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.3","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"startx","filters":[],"listItems":[],"multiselect":false,"name":"startx","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"x","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"starty","filters":[],"listItems":[],"multiselect":false,"name":"starty","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"y","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"resistdown","filters":[],"listItems":[],"multiselect":false,"name":"resistdown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"resistside","filters":[],"listItems":[],"multiselect":false,"name":"resistside","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

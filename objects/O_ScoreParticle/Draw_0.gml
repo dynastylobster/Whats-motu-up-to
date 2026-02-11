@@ -18,7 +18,7 @@ if hit {
 
 draw_set_font(global.scorefont2)
 draw_set_halign(fa_center)
-draw_text(floor(x),floor(y),string(score/2))
+draw_text(floor(x),floor(y),string(_score/2))
 draw_set_halign(fa_left)
 
 pal_swap_reset();
