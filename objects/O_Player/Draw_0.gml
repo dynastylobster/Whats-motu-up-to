@@ -10,12 +10,12 @@ if hit and hittimer > 60 {
 
 draw_sprite_ext(sprite_index,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));
 if O_LevelObject.hassword {
-if sprite_index = S_MotuIdle {draw_sprite_ext(S_IdleSword,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
-if sprite_index = S_MotuLand {draw_sprite_ext(S_WalkSword,1,draw_x,draw_y+2,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
-if sprite_index = S_MotuWalk {draw_sprite_ext(S_WalkSword,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
-if sprite_index = S_MotuJump {draw_sprite_ext(S_JumpSword,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
-if sprite_index = S_MotuRun {draw_sprite_ext(S_RunSword,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
-if sprite_index = S_MotuSlice {draw_sprite_ext(S_SliceSword,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
+if sprite_index = idlesprite {draw_sprite_ext(weaponidlesprite,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
+if sprite_index = landsprite {draw_sprite_ext(weaponwalksprite,1,draw_x,draw_y+2,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
+if sprite_index = walksprite {draw_sprite_ext(weaponwalksprite,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
+if sprite_index = jumpsprite {draw_sprite_ext(weaponjumpsprite,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
+if sprite_index = runsprite {draw_sprite_ext(weaponrunsprite,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
+if sprite_index = slicesprite {draw_sprite_ext(weaponslicesprite,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
 }
 
 pal_swap_set(S_motupal,BrightPalette,0);

@@ -7,7 +7,7 @@ function SetCostumes(){
 		case "Motu":
 			
 		with O_Player {
-		slicepaloffs = 0;
+		slicepaloffset = 0;
 		palsprite = S_motupal
 		idlesprite = S_MotuIdle
 		walksprite = S_MotuWalk
@@ -16,6 +16,15 @@ function SetCostumes(){
 		runsprite = S_MotuRun
 		slicesprite = S_MotuSlice
 		downslicesprite = S_MotuDownSlice
+	
+		weaponidlesprite = S_IdleSword
+		weaponwalksprite = S_WalkSword
+		weaponlandsprite = S_WalkSword
+		weaponjumpsprite = S_JumpSword
+		weaponrunsprite = S_RunSword
+		weaponslicesprite = S_SliceSword
+		weapondownslicesprite = S_MotuDownSlice
+		
 			}
 		
 		break;
