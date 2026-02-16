@@ -130,17 +130,11 @@ if !InputCheck(INPUT_VERB.ACCEPT) and !boost{
 				yspeed*= 0.8
 			}
 	}
-	
 if InputPressed(INPUT_VERB.ACTION) {
-	
-	
-		if !instance_exists(O_Attack) and !downslicing {
-			O_Attack.inactivetimer = O_Attack.baseinactivetimer
+		if !instance_exists(O_Slice) and !downslicing {
 			slicing = true;
-			O_Attack.active = true
+			instance_create_depth(x,y,depth,O_Slice)	
 		}
-		
-		
 	}
 	
 	if landingtimer > 0 {
@@ -167,8 +161,6 @@ if abs(xspeed) < 0.25 {
 		xspeed = 0;
 	}
 	
-	if global.weapon = "sword" {
-
 if !grounded and InputPressed(INPUT_VERB.DOWN) and (O_LevelObject.hassword = true) and hittimer < 70 {
 		if !downslicing and !place_meeting(x,y+9,[WALL,WALLTILE]) and !place_meeting(x,y+9,O_Wall) {
 			xspeed*= 0.5
@@ -177,8 +169,6 @@ if !grounded and InputPressed(INPUT_VERB.DOWN) and (O_LevelObject.hassword = tru
 		} else {
 			downslicing = false;	
 		}
-	}
-
 	}
 
 //fix bug that gets the game to stop for some fucking reason

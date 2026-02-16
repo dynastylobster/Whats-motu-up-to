@@ -81,7 +81,6 @@
   ],
   "ResourceOrderSettings":[
     {"name":"__InputUpdateController","order":19,"path":"objects/__InputUpdateController/__InputUpdateController.yy",},
-    {"name":"O_Attack","order":2,"path":"objects/O_Attack/O_Attack.yy",},
     {"name":"O_CoinFlip","order":3,"path":"objects/O_CoinFlip/O_CoinFlip.yy",},
     {"name":"O_DeathBlock","order":2,"path":"objects/O_DeathBlock/O_DeathBlock.yy",},
     {"name":"O_DeathWall","order":6,"path":"objects/O_DeathWall/O_DeathWall.yy",},
@@ -96,6 +95,7 @@
     {"name":"O_Player","order":1,"path":"objects/O_Player/O_Player.yy",},
     {"name":"O_ScoreParticle","order":4,"path":"objects/O_ScoreParticle/O_ScoreParticle.yy",},
     {"name":"O_Semi","order":3,"path":"objects/O_Semi/O_Semi.yy",},
+    {"name":"O_Slice","order":2,"path":"objects/O_Slice/O_Slice.yy",},
     {"name":"O_SliceBlock","order":5,"path":"objects/O_SliceBlock/O_SliceBlock.yy",},
     {"name":"O_SliceBlockParticle","order":2,"path":"objects/O_SliceBlockParticle/O_SliceBlockParticle.yy",},
     {"name":"O_Slope","order":4,"path":"objects/O_Slope/O_Slope.yy",},
@@ -380,7 +380,6 @@
     {"name":"SetCostumes","order":11,"path":"scripts/SetCostumes/SetCostumes.yy",},
     {"name":"SwitchRatio","order":1,"path":"scripts/SwitchRatio/SwitchRatio.yy",},
     {"name":"SwitchScale","order":3,"path":"scripts/SwitchScale/SwitchScale.yy",},
-    {"name":"WeaponInit","order":13,"path":"scripts/WeaponInit/WeaponInit.yy",},
     {"name":"shd_pal_html_surface","order":1,"path":"shaders/shd_pal_html_surface/shd_pal_html_surface.yy",},
     {"name":"shd_pal_swapper","order":2,"path":"shaders/shd_pal_swapper/shd_pal_swapper.yy",},
     {"name":"Snd_Dink","order":1,"path":"sounds/Snd_Dink/Snd_Dink.yy",},

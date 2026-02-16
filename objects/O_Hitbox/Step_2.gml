@@ -125,8 +125,8 @@ switch owner.object_index {
 						with  instance_place(x,y,O_SliceBlock) {
 						BreakSliceBlock();	
 						}
-						owner.xspeed = owner.facing*O_Attack.downslice_yeet
-					owner.yspeed = -(O_Attack.downslice_yeet*2)
+						owner.xspeed = owner.facing*3
+					owner.yspeed = -6
 					owner.boost = true;
 					if owner.downslicing {
 					owner.downslicing = false;
