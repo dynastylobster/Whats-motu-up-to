@@ -8,12 +8,17 @@
   ],
   "managed":true,
   "name":"O_Attack",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"O_All","path":"objects/O_All/O_All.yy",},"propertyId":{"name":"grounded","path":"objects/O_All/O_All.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
+  ],
   "parent":{
     "name":"Don't Place",
     "path":"folders/Objects/Don't Place.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"O_All",
+    "path":"objects/O_All/O_All.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
