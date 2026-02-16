@@ -23,7 +23,7 @@ function SetCostumes(){
 		weaponjumpsprite = S_JumpSword
 		weaponrunsprite = S_RunSword
 		weaponslicesprite = S_SliceSword
-		weapondownslicesprite = S_MotuDownSlice
+		weapondownslicesprite = S_DownSliceSword
 		
 			}
 		

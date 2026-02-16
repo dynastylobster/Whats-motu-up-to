@@ -130,11 +130,17 @@ if !InputCheck(INPUT_VERB.ACCEPT) and !boost{
 				yspeed*= 0.8
 			}
 	}
+	
+/*
 if InputPressed(INPUT_VERB.ACTION) {
 		if !instance_exists(O_Slice) and !downslicing {
 			slicing = true;
-			instance_create_depth(x,y,depth,O_Slice)	
+			//instance_create_depth(x,y,depth,O_Slice)	
 		}
+	}
+	*/
+if InputPressed(INPUT_VERB.ACTION) {
+		running = true;
 	}
 	
 	if landingtimer > 0 {
@@ -160,7 +166,10 @@ if !sloping and !running {
 if abs(xspeed) < 0.25 {
 		xspeed = 0;
 	}
-	
+
+
+//Depricated downslice code
+/*
 if !grounded and InputPressed(INPUT_VERB.DOWN) and (O_LevelObject.hassword = true) and hittimer < 70 {
 		if !downslicing and !place_meeting(x,y+9,[WALL,WALLTILE]) and !place_meeting(x,y+9,O_Wall) {
 			xspeed*= 0.5
@@ -170,6 +179,8 @@ if !grounded and InputPressed(INPUT_VERB.DOWN) and (O_LevelObject.hassword = tru
 			downslicing = false;	
 		}
 	}
+*/
+
 
 //fix bug that gets the game to stop for some fucking reason
 if place_meeting(x,y+2,[WALL,WALLTILE]) or place_meeting(x,y+2,O_Wall) or place_meeting(x,y+2,O_Slope) or place_meeting(x,y+2,[SLOPE,SLOPETILE]) or place_meeting(x,y+2,[SEMI,SEMITILE]) or place_meeting(x,y+2,O_Semi) {

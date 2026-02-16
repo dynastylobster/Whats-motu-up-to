@@ -3,6 +3,8 @@
 mask_index = S_MotuIdle
 depth -= 25
 event_inherited();
+baseruntimer = 10;
+runtimer = 10;
 hit = false;
 hittimer = 0;
 draw_x = int64(x);

@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"S_MotuDownSlice",
+  "%Name":"S_DownSliceSword",
   "bboxMode":2,
   "bbox_bottom":26,
   "bbox_left":7,
@@ -21,19 +21,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"9286c1f0-ecfb-4f77-b464-b0177d978f97","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"9286c1f0-ecfb-4f77-b464-b0177d978f97","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"S_MotuDownSlice",
+  "name":"S_DownSliceSword",
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Motu",
-    "path":"folders/Sprites/Player Sprites/Motu.yy",
+    "name":"Sword",
+    "path":"folders/Sprites/Player Sprites/Weapons/Sword.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"S_MotuDownSlice",
+    "%Name":"S_DownSliceSword",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"S_MotuDownSlice",
+    "name":"S_DownSliceSword",
     "playback":1,
     "playbackSpeed":15.0,
     "playbackSpeedType":0,
@@ -71,7 +71,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e51eeadf-d10b-4d80-998d-fba4699799a5","path":"sprites/S_MotuDownSlice/S_MotuDownSlice.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e51eeadf-d10b-4d80-998d-fba4699799a5","path":"sprites/S_DownSliceSword/S_DownSliceSword.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"13f55da3-2c0f-4cb0-8a57-68a10b78f811","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

@@ -10,8 +10,8 @@
   "name":"O_Slice",
   "overriddenProperties":[],
   "parent":{
-    "name":"Don't Place",
-    "path":"folders/Objects/Don't Place.yy",
+    "name":"Depricated",
+    "path":"folders/Objects/Depricated.yy",
   },
   "parentObjectId":null,
   "persistent":false,
