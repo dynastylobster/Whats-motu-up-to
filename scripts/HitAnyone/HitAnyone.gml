@@ -1,7 +1,7 @@
 function HitAnyone(){
 
-	if instance_exists(O_Slice) {
-		with O_Slice {
+	if instance_exists(O_Attack) {
+		with O_Attack {
 			if done_slicing = false {global.stoptimer = 3;}
 			done_slicing = true;
 			drawpal = 3;

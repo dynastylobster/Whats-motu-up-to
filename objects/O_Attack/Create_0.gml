@@ -1,4 +1,7 @@
-audio_play_sound(Snd_Slice,0,0,global.sfxvolume*0.5,0,random_range(0.93,1.1));
+
+active = false;
+WeaponInit();
+
 
 mask_index = S_Empty;
 motu = noone
