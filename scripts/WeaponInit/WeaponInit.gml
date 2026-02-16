@@ -4,6 +4,7 @@ function WeaponInit(){
 	
 switch global.weapon {
 	case "sword":
+		
 		baseinactivetimer = 30
 	break;
 }
