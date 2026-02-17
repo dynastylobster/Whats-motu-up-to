@@ -1,7 +1,7 @@
 //draw self
 draw_set_font(TinyFont);
 pal_swap_set(S_motupal,BrightPalette,0);
-
+//draw_text(x,y-50,"slicing:"+string(slicing))
 if (!hit) or (hit and hittimer < 60 and hittimer%2 = 0) or (hit and hittimer > 60) {
 
 if hit and hittimer > 60 {

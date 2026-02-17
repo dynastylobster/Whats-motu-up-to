@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"SliceAnimation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SliceAnimation",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

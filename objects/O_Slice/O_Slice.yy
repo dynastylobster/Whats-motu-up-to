@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Depricated",
-    "path":"folders/Objects/Depricated.yy",
+    "path":"folders/Objects/Common/Depricated.yy",
   },
   "parentObjectId":null,
   "persistent":false,
