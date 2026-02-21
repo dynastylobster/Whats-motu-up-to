@@ -10,12 +10,16 @@ if instance_exists(O_Player) {
 		x = O_Player.x;
 		image_xscale = O_Player.facing;
 		y = O_Player.y;
+		
+		if (done_attacking == true) { currentattackstyle = noone; }
+		if (currentattackstyle == noone || global.weapon == "scythe") {
 	if O_Player.downslicing = false {
 	sprite_index = attacksprite	
 	} else {
 	sprite_index = attackspritedown
 	}
-
+	currentattackstyle = sprite_index;
+		}
 //default functionality for checking age and inputs
 if !global.paused {
 	
