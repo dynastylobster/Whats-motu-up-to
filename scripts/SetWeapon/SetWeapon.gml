@@ -1,6 +1,10 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function SetWeapon(){
+function SetWeapon(weapontype = noone){
+	if (weapontype != noone) {
+		// Fallback use only! Please specify!
+		global.weapon = weapontype;
+	}
 switch global.weapon {
 		case "sword":
 			image_speed = 1
@@ -51,4 +55,5 @@ switch global.weapon {
 	if O_Player.downslicing = true {
 	mask_index = attackspritedown }	
 	}
+	SetCostumes(noone, weapontype);
 }

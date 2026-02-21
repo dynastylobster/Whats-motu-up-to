@@ -1,8 +1,14 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function SetCostumes(){
+function SetCostumes(costumetype = noone, weapontype = noone){
 	//if instance_exists(O_Player) {
-	
+	if (costumetype != noone) {
+		// Fallback use only! Please specify!
+		global.character = costumetype;
+	}
+	if (weapontype != noone) {
+		global.weapon = weapontype;
+	}
 	switch global.character {
 		case "Motu":
 			
