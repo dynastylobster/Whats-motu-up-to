@@ -15,8 +15,7 @@ switch global.character {
 
 pal_swap_set(S_SlicePal,slicepaloffset,false)
 if active {
-
-	draw_sprite_ext(sprite_index,image_index,int64(draw_x),floor(int64(y)),image_xscale,image_yscale,0,c_white,1);
+	draw_sprite_ext(sprite_index,image_index,int64(draw_x),floor(int64(y)),image_xscale,image_yscale,image_angle,c_white,1);
 	}
 pal_swap_reset();
 

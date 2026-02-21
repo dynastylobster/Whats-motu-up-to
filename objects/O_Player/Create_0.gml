@@ -18,7 +18,7 @@ downslicing = false;
 boost = false;
 GenerateHitBox(x,y,1,5,-2,7,O_Player,0,true);
 //this one under is depricated
-GenerateHitBox(x,y,12,12,-7,8,O_Player,1,true);
+//GenerateHitBox(x,y,12,12,-7,8,O_Player,1,true);
 //heres the new slice
 instance_create_depth(x,y,depth,O_AttackParent);
 

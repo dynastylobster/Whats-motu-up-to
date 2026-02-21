@@ -67,15 +67,44 @@ if !global.paused {
 	//timing and shit tbh
 	switch global.weapon {
 	case "sword":
-SliceAnimation()
+
+if !O_Player.grounded and InputPressed(INPUT_VERB.DOWN) {
+	done_attacking = false;
+	active = true
+	age = 0
+	willdamage = true
+		O_Player.downslicing = true;
+	}
+if O_Player.downslicing {
+	if done_attacking  {
+image_index = 4;
+willdamage = false;
+active = false
+	}
+if O_Player.grounded {
+	sprite_index = S_Empty
+	willdamage = false
+	done_attacking = true
+		active = false;
+		O_Player.downslicing = false
+	}
+ sprite_index = attackspritedown
+} else {
+SliceAnimation();	
+}
 	break;
 	
 	case "scythe":
+if InputCheck(INPUT_VERB.DOWN) and willdamage {
+			O_Player.downslicing = true;	
+	}
+
 SliceAnimation()
-		if O_Player.downslicing {image_angle = 270;} else {image_angle = 0;}
+		if !O_Player.downslicing {image_angle = 0;}
 	break;
 	}
 		
 	}
 	
 }
+mask_index = sprite_index;

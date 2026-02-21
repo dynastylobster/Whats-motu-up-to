@@ -16,7 +16,9 @@ function SetCostumes(){
 		runsprite = S_MotuRun
 		slicesprite = S_MotuSlice
 		downslicesprite = S_MotuDownSlice
-	
+		
+		switch global.weapon {
+			case "sword":
 		weaponidlesprite = S_IdleSword
 		weaponwalksprite = S_WalkSword
 		weaponlandsprite = S_WalkSword
@@ -24,6 +26,16 @@ function SetCostumes(){
 		weaponrunsprite = S_RunSword
 		weaponslicesprite = S_SliceSword
 		weapondownslicesprite = S_DownSliceSword
+		break;
+			case "scythe":
+		weaponidlesprite = S_IdleScythe
+		weaponwalksprite = S_WalkScythe
+		weaponlandsprite = S_WalkScythe
+		weaponjumpsprite = S_JumpScythe
+		weaponrunsprite = S_RunScythe
+		weaponslicesprite = S_SliceScythe
+		weapondownslicesprite = S_Empty			
+		}
 		
 			}
 		

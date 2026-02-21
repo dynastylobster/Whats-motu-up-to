@@ -5,7 +5,7 @@ switch global.weapon {
 		case "sword":
 			image_speed = 1
 			attacksprite = S_Slice
-			attackspritedown = S_Slice
+			attackspritedown = S_MotuDownSliceCol
 			damage = 0.75;
 			damagedown = 1;
 			thrust = 0;
@@ -24,13 +24,15 @@ switch global.weapon {
 			downslice_yeet = 2;
 		break;
 		case "scythe":
+			attacksprite = S_Slice
+			attackspritedown = S_SliceDown
 			image_speed = 0.9
 			damage = 1.25;
 			damagedown = 0.5;
 			thrust = 0;
 			knockback = 0;
 			basedamagetimer = 8;
-			basedeactivatetimer = 30;
+			deactivatetimer = 26;
 			downslice_yeet = 2.5;
 		break;
 		case "gun":
