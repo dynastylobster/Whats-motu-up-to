@@ -11,5 +11,3 @@ willdamage = false;
 // set up weapon's stats
 //current weapons: sword,bat,scythe,gun
 SetWeapon();
-
-currentattackstyle = noone;

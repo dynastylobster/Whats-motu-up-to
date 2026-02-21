@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"R_Test",
-  "creationCodeFile":"rooms/R_Test/RoomCreationCode.gml",
+  "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
@@ -94,7 +94,6 @@
     {"name":"inst_7E77FC9D","path":"rooms/R_Test/R_Test.yy",},
     {"name":"inst_53964B2E","path":"rooms/R_Test/R_Test.yy",},
     {"name":"inst_50788958","path":"rooms/R_Test/R_Test.yy",},
-    {"name":"inst_1CB10296","path":"rooms/R_Test/R_Test.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -209,7 +208,6 @@
         {"$GMRInstance":"v4","%Name":"inst_7E77FC9D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7E77FC9D","objectId":{"name":"O_EntityParent","path":"objects/O_EntityParent/O_EntityParent.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":272.0,"y":96.0,},
         {"$GMRInstance":"v4","%Name":"inst_53964B2E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_53964B2E","objectId":{"name":"O_EntityParent","path":"objects/O_EntityParent/O_EntityParent.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":240.0,"y":96.0,},
         {"$GMRInstance":"v4","%Name":"inst_50788958","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_50788958","objectId":{"name":"O_EntityParent","path":"objects/O_EntityParent/O_EntityParent.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":752.0,"y":96.0,},
-        {"$GMRInstance":"v4","%Name":"inst_1CB10296","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1CB10296","objectId":{"name":"O_WeaponSwitcher","path":"objects/O_WeaponSwitcher/O_WeaponSwitcher.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":16.0,"y":112.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRLayer":"","%Name":"ColTiles","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
         {"$GMRTileLayer":"","%Name":"ColTileSemi","depth":400,"effectEnabled":true,"effectType":"_filter_colourise","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"ColTileSemi","properties":[
