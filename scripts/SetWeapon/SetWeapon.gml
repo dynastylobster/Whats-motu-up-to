@@ -21,14 +21,14 @@ switch global.weapon {
 			knockback = 3;
 			basedamagetimer = 8;
 			basedeactivatetimer = 25;
-			downslice_yeet = 2;
+			downslice_yeet = 3;
 		break;
 		case "scythe":
 			attacksprite = S_Slice
 			attackspritedown = S_SliceDown
 			image_speed = 0.9
-			damage = 1.25;
-			damagedown = 0.5;
+			damage = 1;
+			damagedown = 0.75;
 			thrust = 0;
 			knockback = 0;
 			basedamagetimer = 8;

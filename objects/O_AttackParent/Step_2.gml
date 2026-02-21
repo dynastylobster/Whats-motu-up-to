@@ -31,7 +31,7 @@ if !global.paused {
 					case "sword":
 					audio_play_sound(Snd_Slice,0,0,global.sfxvolume*0.5,0,random_range(0.93,1.1));
 					break
-					case "sscythe":
+					case "scythe":
 					audio_play_sound(Snd_Slice,0,0,global.sfxvolume*0.5,0,random_range(0.90,1));
 					break
 					}
@@ -69,6 +69,7 @@ if !global.paused {
 	case "sword":
 
 if !O_Player.grounded and InputPressed(INPUT_VERB.DOWN) {
+	O_Player.yspeed = clamp(O_Player.yspeed,0,4)
 	done_attacking = false;
 	active = true
 	age = 0

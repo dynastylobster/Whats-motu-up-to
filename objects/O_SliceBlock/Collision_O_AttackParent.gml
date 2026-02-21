@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if other.done_attacking = false {
+if other.done_attacking = false and other.willdamage = true {
 if O_Player.downslicing {
 		O_Player.xspeed = O_Player.facing * O_AttackParent.downslice_yeet;
 		O_Player.yspeed = - (O_AttackParent.downslice_yeet*2)
