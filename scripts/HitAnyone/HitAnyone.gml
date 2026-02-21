@@ -28,6 +28,7 @@ if O_Player.downslicing {
 		O_Player.xspeed = O_Player.facing * attack.downslice_yeet;
 		O_Player.yspeed = - (attack.downslice_yeet*2)
 		O_Player.boost = true;
+		O_Player.downslicing = false;
 }
 			
 global.stoptimer = 3;
