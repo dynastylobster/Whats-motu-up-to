@@ -21,6 +21,11 @@ if instance_exists(O_AttackParent) {
 			if !O_Player.downslicing and !immuneside {
 					hp-=O_AttackParent.damage;
 			}
+			if immuneside {
+			nonhittimer = 15
+			audio_stop_sound(Snd_SliceHit)
+			audio_play_sound(Snd_Dink,0,0,global.sfxvolume,0,1);
+			}
 				if O_Player.downslicing and !immunedown {
 					hp-=O_AttackParent.damagedown
 			}
@@ -28,6 +33,13 @@ if O_Player.downslicing {
 		O_Player.xspeed = O_Player.facing * attack.downslice_yeet;
 		O_Player.yspeed = - (attack.downslice_yeet*2)
 		O_Player.boost = true;
+		
+		if immunedown {
+		audio_stop_sound(Snd_SliceHit)
+		audio_play_sound(Snd_Dink,0,0,global.sfxvolume,0,1);
+		nonhittimer = 20
+		}
+		
 		O_Player.downslicing = false;
 }
 			

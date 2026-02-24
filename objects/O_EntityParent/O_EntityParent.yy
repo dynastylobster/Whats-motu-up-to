@@ -58,6 +58,7 @@
     {"$GMObjectProperty":"v2","%Name":"starty","filters":[],"listItems":[],"multiselect":false,"name":"starty","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"y","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"resistdown","filters":[],"listItems":[],"multiselect":false,"name":"resistdown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"resistside","filters":[],"listItems":[],"multiselect":false,"name":"resistside","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"nonhittimer","filters":[],"listItems":[],"multiselect":false,"name":"nonhittimer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

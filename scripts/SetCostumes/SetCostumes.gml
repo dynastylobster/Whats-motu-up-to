@@ -14,6 +14,7 @@ function SetCostumes(costumetype = noone, weapontype = noone){
 			
 		with O_Player {
 		slicepaloffset = 0;
+		behindsprite = S_MotuHair
 		palsprite = S_motupal
 		idlesprite = S_MotuIdle
 		walksprite = S_MotuWalk
@@ -47,12 +48,14 @@ function SetCostumes(costumetype = noone, weapontype = noone){
 		
 		break;
 		case "Billy":
+		behindsprite = S_MotuHair
 		with O_Player {
 		slicepaloffs = 4
 		}
 		break;
 
 		case "Banan":
+		behindsprite = noone	
 		with O_Player {
 		slicepaloffs = 8
 		}

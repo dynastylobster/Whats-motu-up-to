@@ -7,7 +7,7 @@ if (!hit) or (hit and hittimer < 60 and hittimer%2 = 0) or (hit and hittimer > 6
 if hit and hittimer > 60 {
 		pal_swap_set(S_motupal,3+BrightPalette,0);
 	}
-
+{draw_sprite_ext(behindsprite,behindspriteframe,draw_x,draw_y+1+(int64(yspeed/2)),facing,image_yscale,image_angle,c_white,(1-(global.debugmode)));}
 
 if sprite_index = idlesprite {draw_sprite_ext(weaponidlesprite,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
 if sprite_index = landsprite {draw_sprite_ext(weaponwalksprite,1,draw_x,draw_y+2,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}

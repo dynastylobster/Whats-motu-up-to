@@ -494,6 +494,7 @@
     {"id":{"name":"S_LevelObject","path":"sprites/S_LevelObject/S_LevelObject.yy",},},
     {"id":{"name":"S_MotuDownSlice","path":"sprites/S_MotuDownSlice/S_MotuDownSlice.yy",},},
     {"id":{"name":"S_MotuDownSliceCol","path":"sprites/S_MotuDownSliceCol/S_MotuDownSliceCol.yy",},},
+    {"id":{"name":"S_MotuHair","path":"sprites/S_MotuHair/S_MotuHair.yy",},},
     {"id":{"name":"S_MotuIdle","path":"sprites/S_MotuIdle/S_MotuIdle.yy",},},
     {"id":{"name":"S_MotuJump","path":"sprites/S_MotuJump/S_MotuJump.yy",},},
     {"id":{"name":"S_MotuLand","path":"sprites/S_MotuLand/S_MotuLand.yy",},},

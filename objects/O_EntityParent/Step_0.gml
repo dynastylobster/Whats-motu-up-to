@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+if nonhittimer > 0 {
+nonhittimer--	
+}
 if isenemy {
 if !global.stop {
 		

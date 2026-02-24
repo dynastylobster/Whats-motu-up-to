@@ -4,7 +4,7 @@ function DrawEntity(){
 	if !hit {
 	pal_swap_set(global.enemypal,currentpal+brightoffset,false)
 	}
-if hit {
+if hit and nonhittimer=0 {
 	currentpal--;
 	currentpal = clamp(currentpal,1,8);
 	pal_swap_set(S_EnemyPalHit,currentpal,false)

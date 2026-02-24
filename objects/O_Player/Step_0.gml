@@ -1,5 +1,10 @@
-//weapons stuff
+//hair/tail stuff
+behindspriteframe += behindspritespd
+if abs(xspeed+yspeed) < 1 {
+	behindspriteframe = 0;
+} else {behindspritespd = abs(xspeed)/8 + abs(yspeed)/8}
 
+//weapons stuff
 
 
 if grounded {if downslicing = true {slicng = false} downslicing = false; global.scoremultiplier = 1;}
@@ -8,6 +13,16 @@ if landingtimer > 0 {
 	}
 
 if !global.stop {
+	//allows a little leeway with jumping
+	if place_empty(x,y+yspeed,[WALL,WALLTILE,O_Wall]) {
+		if place_meeting(x,y+8,[WALL,WALLTILE,O_Wall]) {
+		if InputPressed(INPUT_VERB.ACCEPT) {
+			jumptimer = 18	
+		}
+		}
+	if jumptimer > 0 jumptimer--
+	}
+	//coyote time
 	if coyotetime > 0 coyotetime--
 	
 if !grounded {
@@ -40,7 +55,7 @@ y+= yspeed
 
 if grounded or coyotetime > 0 {
 if sprite_index = jumpsprite then sprite_index = runsprite;
-if InputPressed(INPUT_VERB.ACCEPT) {
+if InputPressed(INPUT_VERB.ACCEPT) or (place_meeting(x,y+1,[WALL,WALLTILE,O_Wall]) and jumptimer > 0) or (landingtimer > 0 and InputPressed(INPUT_VERB.ACCEPT)) {
 	audio_play_sound(Snd_Jump,0,0,global.sfxvolume*1.25,0,1);
 		yspeed = -jumpspeed
 		if sloping {y-= 2;sloping = false;}

@@ -5,3 +5,4 @@ pal = 0;
 currentpal = 0;
 brightoffset = 4;
 hittimer = 0;
+nonhittimer = 15;

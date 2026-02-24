@@ -78,6 +78,7 @@ if !O_Player.grounded and InputPressed(INPUT_VERB.DOWN) {
 	active = true
 	age = 0
 	willdamage = true
+	if !O_Player.downslicing audio_play_sound(Snd_Slice,0,0,global.sfxvolume/4,0,1.25)
 		O_Player.downslicing = true;
 	}
 if O_Player.downslicing {
