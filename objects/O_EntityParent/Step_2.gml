@@ -15,7 +15,11 @@ if hit {
 		draw_x = irandom_range(x-2,x+2);
 	if hittimer > 0 {hittimer--;}
 	}
-if hittimer <= 0 hit = false;
+if hittimer <= 0 {
+
+	hit = false;
+	
+	}
 
 if hp <= 0 {
 	if !dead {

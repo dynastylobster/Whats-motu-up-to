@@ -9,3 +9,4 @@ nonhittimer = 15;
 if hasgravity{
 	GenerateHitBox(x,y,1,5,-2,7,self,0,true);
 }
+knockspeed = 0;

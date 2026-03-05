@@ -5,7 +5,9 @@ nonhittimer--
 }
 if isenemy {
 if !global.stop {
-		
+if knockspeed > 0 knockspeed -= 0.25
+if knockspeed < 0 knockspeed += 0.25
+
 	if hasgravity {
 		
 		if !grounded {
@@ -24,6 +26,14 @@ if !global.stop {
 		} else {sloping = false;}
 		
 		}
-		
+
+	if !place_meeting(x+xspeed,y,[WALL,WALLTILE]) {
+		x += xspeed + knockspeed
+	}
+	
+	if !place_meeting(x,y+yspeed,[WALL,WALLTILE]) {
+		y += yspeed
+	}
+
 	}
 }

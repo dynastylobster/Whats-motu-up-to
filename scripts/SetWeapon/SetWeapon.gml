@@ -12,8 +12,8 @@ switch global.weapon {
 			attackspritedown = S_MotuDownSliceCol
 			damage = 0.75;
 			damagedown = 1;
-			thrust = 0;
-			knockback = 0.25;
+			thrust = 1.25;
+			knockback = 2;
 			basedamagetimer = 6;
 			basedeactivatetimer = 20;
 			downslice_yeet = 3;
@@ -21,8 +21,8 @@ switch global.weapon {
 		case "bat":
 			damage = 0.5;
 			damagedown = 0.8;
-			thrust = 1;
-			knockback = 3;
+			thrust = 3;
+			knockback = 5;
 			basedamagetimer = 8;
 			basedeactivatetimer = 25;
 			downslice_yeet = 3;
@@ -33,8 +33,8 @@ switch global.weapon {
 			image_speed = 0.9
 			damage = 1;
 			damagedown = 0.75;
-			thrust = 0;
-			knockback = 0;
+			thrust = 2;
+			knockback = 3;
 			basedamagetimer = 8;
 			deactivatetimer = 26;
 			downslice_yeet = 2.5;
@@ -43,7 +43,7 @@ switch global.weapon {
 			damage = 1;
 			damagedown = 1;
 			thrust = 0;
-			knockback = 0.5;
+			knockback = 1;
 			basedamagetimer = 0;
 			basedeactivatetimer = 300;
 			downslice_yeet = 1;

@@ -41,11 +41,25 @@ if O_Player.downslicing {
 		}
 		
 		O_Player.downslicing = false;
+} else {
+	if hasgravity {
+sloping = false
+if hit = false {
+knockspeed = abs(O_AttackParent.knockback) * O_Player.facing
+y-= 2
+yspeed -= (O_AttackParent.thrust)
+		}
 }
-			
+}
+
+
+
 global.stoptimer = 3;
+
 hit = true;
 }
+
+	grounded = false
 	attack.done_attacking = true;
 	attack.willdamage = false;
 			}
