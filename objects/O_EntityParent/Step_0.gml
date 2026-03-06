@@ -27,11 +27,16 @@ if knockspeed < 0 knockspeed += 0.25
 		
 		}
 
-	if !place_meeting(x+xspeed,y,[WALL,WALLTILE]) {
+	if !place_meeting(x+xspeed+knockspeed,y,[O_Wall,WALL,WALLTILE,O_SliceBlock]) {
 		x += xspeed + knockspeed
 	}
+	if place_meeting(x+xspeed+(2*sign(xspeed)),y,[O_Wall,WALL,WALLTILE,O_SliceBlock]) {
+		knockspeed *= -1
+		knockspeed = sign(knockspeed)*2
+		xspeed *= -1
+	}
 	
-	if !place_meeting(x,y+yspeed,[WALL,WALLTILE]) {
+	if !place_meeting(x,y+yspeed,[WALL,WALLTILE,O_Wall]) {
 		y += yspeed
 	}
 
