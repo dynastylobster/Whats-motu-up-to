@@ -160,8 +160,11 @@ switch owner.object_get_parent(owner) {
 	/*fix the transition between slope and floor. removing this lock up the game */		
 	if !place_meeting(x,y+2,[WALL,WALLTILE]) and !place_meeting(x,y,O_Wall) {
 	//check to see if the slope is below you but youre not touching it, so move motu down
-				while (owner.grounded) and (!place_meeting(x,y+1,[SLOPE,SLOPETILE]) and !place_meeting(x,y,O_Slope) ) and owner.sloping and owner.yspeed >= 0
-				{owner.y+=0.25; y = owner.y + yoffset;}
+				while (owner.grounded) and (!place_meeting(x,y+2,[SLOPE,SLOPETILE]) and !place_meeting(x,y+2,O_Slope) ) and owner.sloping and owner.yspeed >= 0
+				{
+					owner.y+=0.25;
+					y = owner.y + yoffset;
+					}
 	}
 						// if youre not near the slope, stop thinking you be sloping
 					if !place_meeting(x,y+12,[SLOPE,SLOPETILE]) and !place_meeting(x,y+5,O_Slope) then {on = false; owner.sloping = false;}
