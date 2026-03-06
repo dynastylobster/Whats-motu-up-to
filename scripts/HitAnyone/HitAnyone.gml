@@ -24,6 +24,7 @@ if instance_exists(O_AttackParent) {
 			if immuneside {
 			nonhittimer = 15
 			audio_stop_sound(Snd_SliceHit)
+			audio_stop_sound(Snd_Slice)
 			audio_play_sound(Snd_Dink,0,0,global.sfxvolume,0,1);
 			}
 				if O_Player.downslicing and !immunedown {
@@ -36,9 +37,19 @@ if O_Player.downslicing {
 		
 		if immunedown {
 		audio_stop_sound(Snd_SliceHit)
+		audio_stop_sound(Snd_Slice)
 		audio_play_sound(Snd_Dink,0,0,global.sfxvolume,0,1);
 		nonhittimer = 20
 		}
+		
+		with (instance_create_depth(x,y,depth-1,O_HitSpark)) {
+			horizontal = false;
+			xspeed = 2
+			}
+			with (instance_create_depth(x,y,depth-1,O_HitSpark)) {
+			horizontal = false;
+			xspeed = -2
+			}
 		
 		O_Player.downslicing = false;
 } else {
@@ -50,6 +61,7 @@ y-= 2
 yspeed -= (O_AttackParent.thrust)
 		}
 }
+instance_create_depth(x,y,depth-1,O_HitSpark)
 }
 
 

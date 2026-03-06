@@ -122,6 +122,7 @@
     {"id":{"name":"O_Gem","path":"objects/O_Gem/O_Gem.yy",},},
     {"id":{"name":"O_Hitbox","path":"objects/O_Hitbox/O_Hitbox.yy",},},
     {"id":{"name":"O_HitBoxTest","path":"objects/O_HitBoxTest/O_HitBoxTest.yy",},},
+    {"id":{"name":"O_HitSpark","path":"objects/O_HitSpark/O_HitSpark.yy",},},
     {"id":{"name":"O_LevelObject","path":"objects/O_LevelObject/O_LevelObject.yy",},},
     {"id":{"name":"O_MotuHelm","path":"objects/O_MotuHelm/O_MotuHelm.yy",},},
     {"id":{"name":"O_NPC","path":"objects/O_NPC/O_NPC.yy",},},

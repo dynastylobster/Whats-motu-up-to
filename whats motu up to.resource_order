@@ -92,6 +92,7 @@
     {"name":"O_GameObject","order":1,"path":"objects/O_GameObject/O_GameObject.yy",},
     {"name":"O_Hitbox","order":7,"path":"objects/O_Hitbox/O_Hitbox.yy",},
     {"name":"O_HitBoxTest","order":8,"path":"objects/O_HitBoxTest/O_HitBoxTest.yy",},
+    {"name":"O_HitSpark","order":5,"path":"objects/O_HitSpark/O_HitSpark.yy",},
     {"name":"O_LevelObject","order":6,"path":"objects/O_LevelObject/O_LevelObject.yy",},
     {"name":"O_MotuHelm","order":1,"path":"objects/O_MotuHelm/O_MotuHelm.yy",},
     {"name":"O_OnScreenTest","order":2,"path":"objects/O_OnScreenTest/O_OnScreenTest.yy",},

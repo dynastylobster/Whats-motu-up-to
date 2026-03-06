@@ -36,8 +36,13 @@ if hp <= 0 {
 }
 
 if !onscreen {
+	if (startx < CAM_X-16 or startx > CAM_X+CAM_W+16) or (starty < CAM_Y-16 or starty > CAM_Y+CAM_H+16)
+	{
 	dead = false;
 	x = startx;
 	y = starty;
 	hp = startHP;
+	}
+	
+	
 }
