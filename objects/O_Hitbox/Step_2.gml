@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this 
+var safewhile = 0
 x = owner.x + xoffset
 //y = owner.y + yoffset
 if !global.stoptimer {
@@ -75,7 +76,14 @@ switch owner.object_get_parent(owner) {
 	if !place_meeting(x,y+2,[WALL,WALLTILE]) and !place_meeting(x,y,O_Wall) {
 	//check to see if the slope is below you but youre not touching it, so move motu down
 				while (owner.grounded) and (!place_meeting(x,y+1,[SLOPE,SLOPETILE]) and !place_meeting(x,y,O_Slope) ) and owner.sloping and owner.yspeed >= 0 and owner.downslicing = false
-				{owner.y+=0.25; y = owner.y + yoffset;}
+				{
+					safewhile++
+					owner.y+=0.25;
+					y = owner.y + yoffset;
+					if safewhile >= 4 {
+						break;
+						}
+					}
 	}
 						// if youre not near the slope, stop thinking you be sloping
 					if !place_meeting(x,y+5,[SLOPE,SLOPETILE]) and !place_meeting(x,y+5,O_Slope) then {on = false; owner.sloping = false;}
@@ -162,8 +170,12 @@ switch owner.object_get_parent(owner) {
 	//check to see if the slope is below you but youre not touching it, so move motu down
 				while (owner.grounded) and (!place_meeting(x,y+2,[SLOPE,SLOPETILE]) and !place_meeting(x,y+2,O_Slope) ) and owner.sloping and owner.yspeed >= 0
 				{
+					safewhile++
 					owner.y+=0.25;
 					y = owner.y + yoffset;
+					if safewhile >= 4 {
+					break;
+						}
 					}
 	}
 						// if youre not near the slope, stop thinking you be sloping
