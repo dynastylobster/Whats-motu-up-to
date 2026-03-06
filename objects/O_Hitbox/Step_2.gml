@@ -85,6 +85,7 @@ switch owner.object_get_parent(owner) {
 						}
 					}
 	}
+	safewhile = 0
 						// if youre not near the slope, stop thinking you be sloping
 					if !place_meeting(x,y+5,[SLOPE,SLOPETILE]) and !place_meeting(x,y+5,O_Slope) then {on = false; owner.sloping = false;}
 						if abs(owner.xspeed) > 1 {
