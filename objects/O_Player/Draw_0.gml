@@ -19,6 +19,16 @@ draw_sprite_ext(sprite_index,image_index,draw_x,draw_y+1,facing,image_yscale,ima
 if sprite_index = downslicesprite {draw_sprite_ext(downslicesprite,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
 if sprite_index = downslicesprite {draw_sprite_ext(weapondownslicesprite,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
 pal_swap_set(S_motupal,BrightPalette,0);
+
+if global.character = "Motu" and hp >= 3 {
+		if image_index >= 2 {
+		draw_sprite_ext(S_MotuHelm,0,draw_x,draw_y,facing,1,0,c_white,1);
+		} 
+		if image_index < 2 {
+		draw_sprite_ext(S_MotuHelm,0,draw_x,draw_y+1,facing,1,0,c_white,1);
+		}
+	}
+
 }
 pal_swap_reset();
 
