@@ -80,7 +80,7 @@ switch owner.object_get_parent(owner) {
 					safewhile++
 					owner.y+=0.25;
 					y = owner.y + yoffset;
-					if safewhile >= 8 {
+					if safewhile >= 16 {
 						break;
 						}
 					}
@@ -174,7 +174,7 @@ switch owner.object_get_parent(owner) {
 					safewhile++
 					owner.y+=0.25;
 					y = owner.y + yoffset;
-					if safewhile >= 8 {
+					if safewhile >= 16 {
 					break;
 						}
 					}
