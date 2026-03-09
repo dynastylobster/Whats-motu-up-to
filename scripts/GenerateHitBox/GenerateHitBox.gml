@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function GenerateHitBox(_x,_y,width,height,xoffset,yoffset,owner,hitboxnum,following) {
+function GenerateHitBox(_x,_y,width,height,xoffset,yoffset,owner,hitboxnum,following,hitsplayer) {
 	var hitbox = (instance_create_depth(x,y,depth,O_Hitbox))
 			hitbox.owner = argument6
 			hitbox.xoffset = argument4
@@ -12,4 +12,5 @@ function GenerateHitBox(_x,_y,width,height,xoffset,yoffset,owner,hitboxnum,follo
 			hitbox.image_yscale = argument3
 			hitbox.owner.hitbox[argument7] = hitbox;
 			hitbox.following = argument8
+			hitbox.hitsplayer = argument9
 }

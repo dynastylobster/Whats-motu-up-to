@@ -33,6 +33,7 @@
     {"$GMObjectProperty":"v2","%Name":"hitboxnum","filters":[],"listItems":[],"multiselect":false,"name":"hitboxnum","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"owner","filters":[],"listItems":[],"multiselect":false,"name":"owner","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
     {"$GMObjectProperty":"v2","%Name":"following","filters":[],"listItems":[],"multiselect":false,"name":"following","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"hitsplayer","filters":[],"listItems":[],"multiselect":false,"name":"hitsplayer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
