@@ -1,4 +1,4 @@
-if (isenemy) and hurtsplayer {
+if (isenemy) {
 if !dead {
 	HitPlayer();
 }	

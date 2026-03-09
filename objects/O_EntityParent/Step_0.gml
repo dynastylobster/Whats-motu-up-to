@@ -1,13 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-//animationstuff
-age += agespeed
-if visualwave_x != 0 {
-		
-	}
-
-
 if nonhittimer > 0 {
 nonhittimer--	
 }

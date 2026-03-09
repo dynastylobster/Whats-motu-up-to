@@ -21,7 +21,7 @@ boost = false;
 jumptimer = 0;
 behindspriteframe = 0;
 behindspritespd = 0;
-GenerateHitBox(x,y,1,5,-2,7,O_Player,0,true,false);
+GenerateHitBox(x,y,1,5,-2,7,O_Player,0,true);
 //this one under is depricated
 //GenerateHitBox(x,y,12,12,-7,8,O_Player,1,true);
 //heres the new slice
