@@ -6,7 +6,7 @@ if global.character = "Billy"
 if !running and !hit and grounded and !slicing {
 		image_speed = 1;
 	}
-if sprite_index = walksprite and abs(xspeed) < 1 {
+if sprite_index = walksprite and abs(xspeed) < resetidleatxspeed {
 	image_index = 0
 	}
 }
