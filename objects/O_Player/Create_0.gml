@@ -5,6 +5,7 @@ SetCostumes()
 mask_index = S_MotuIdle
 depth -= 25
 event_inherited();
+age = 0;
 baseruntimer = 10;
 runtimer = 10;
 hit = false;

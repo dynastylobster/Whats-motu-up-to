@@ -1,4 +1,19 @@
+//character animation stuff
+
+if global.character = "Billy" 
+{
+	behindspriteframe += 0.125
+if !running and !hit and grounded and !slicing {
+		image_speed = 1;
+	}
+}
+if global.character = "Motu" {
+if grounded and xspeed = 0 image_speed = 0;	
+}
+
 //hair/tail stuff
+
+
 behindspriteframe += behindspritespd
 if abs(xspeed+yspeed) < 1 {
 	behindspriteframe = 0;
@@ -108,12 +123,12 @@ if InputPressed(INPUT_VERB.ACCEPT) or (place_meeting(x,y+1,[WALL,WALLTILE,O_Wall
 			
 		if !running and !slicing {
 			if abs(xspeed) > 0 {sprite_index = walksprite; image_speed = 1}
-			if xspeed = 0 {sprite_index = idlesprite; image_speed = 0;}
+			if xspeed = 0 {sprite_index = idlesprite;}
 		}
 		
 		if running and !slicing {
 			if abs(xspeed) > 0 {sprite_index = runsprite; image_speed = 1}
-			if xspeed = 0 {sprite_index = idlesprite; image_speed = 0;}
+			if xspeed = 0 {sprite_index = idlesprite;}
 		}
 
 if !place_meeting(x+xspeed+(1*sign(xspeed)),y,[WALL,WALLTILE]) and !place_meeting(x+xspeed+(1*sign(xspeed)),y,O_Wall){

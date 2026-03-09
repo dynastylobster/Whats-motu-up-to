@@ -7,18 +7,32 @@ if (!hit) or (hit and hittimer < 60 and hittimer%2 = 0) or (hit and hittimer > 6
 if hit and hittimer > 60 {
 		pal_swap_set(S_motupal,3+BrightPalette,0);
 	}
+	
+if global.character = "Motu"
+{draw_sprite_ext(behindsprite,behindspriteframe,draw_x,draw_y+1+(int64(yspeed/2)),facing,image_yscale,image_angle,c_white,(1-(global.debugmode)));}
+if global.character = "Billy"
 {draw_sprite_ext(behindsprite,behindspriteframe,draw_x,draw_y+1+(int64(yspeed/2)),facing,image_yscale,image_angle,c_white,(1-(global.debugmode)));}
 
-if sprite_index = idlesprite {draw_sprite_ext(weaponidlesprite,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
+pal_swap_set(S_SlicePal,slicepaloffs,0);
+var idleoffsetbilly
+
+if global.character = "Billy" {
+		idleoffsetbilly = int64(image_index)
+		if image_index > 3 idleoffsetbilly = int64(image_index-3)
+	}
+if sprite_index = idlesprite {draw_sprite_ext(weaponidlesprite,image_index,draw_x,draw_y+1-idleoffsetbilly,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
 if sprite_index = landsprite {draw_sprite_ext(weaponwalksprite,1,draw_x,draw_y+2,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
 if sprite_index = walksprite {draw_sprite_ext(weaponwalksprite,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
 if sprite_index = jumpsprite {draw_sprite_ext(weaponjumpsprite,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
 if sprite_index = runsprite {draw_sprite_ext(weaponrunsprite,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
 if sprite_index = slicesprite {draw_sprite_ext(weaponslicesprite,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
+
+pal_swap_set(S_motupal,BrightPalette,0);
+
 draw_sprite_ext(sprite_index,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));
 if sprite_index = downslicesprite {draw_sprite_ext(downslicesprite,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
 if sprite_index = downslicesprite {draw_sprite_ext(weapondownslicesprite,image_index,draw_x,draw_y+1,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
-pal_swap_set(S_motupal,BrightPalette,0);
+
 
 if global.character = "Motu" and hp >= 3 {
 		if image_index >= 2 {
