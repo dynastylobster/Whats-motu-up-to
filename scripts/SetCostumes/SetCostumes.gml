@@ -56,6 +56,7 @@ function SetCostumes(costumetype = noone, weapontype = noone){
 		max_yspeed = 5
 		behindsprite = S_BillyITail
 		idlesprite = S_BillyIdle
+		walksprite = S_BillyWalk
 		slicepaloffs = 4
 		break;
 

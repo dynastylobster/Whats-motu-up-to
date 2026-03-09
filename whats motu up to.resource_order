@@ -401,6 +401,7 @@
     {"name":"B_GameBG_4","order":10,"path":"sprites/B_GameBG_4/B_GameBG_4.yy",},
     {"name":"B_GameBG","order":6,"path":"sprites/B_GameBG/B_GameBG.yy",},
     {"name":"S_BillyITail","order":1,"path":"sprites/S_BillyITail/S_BillyITail.yy",},
+    {"name":"S_BillyWalk","order":2,"path":"sprites/S_BillyWalk/S_BillyWalk.yy",},
     {"name":"S_coinflip_Flat","order":14,"path":"sprites/S_coinflip_Flat/S_coinflip_Flat.yy",},
     {"name":"S_coinflip","order":13,"path":"sprites/S_coinflip/S_coinflip.yy",},
     {"name":"S_DeathBlock","order":5,"path":"sprites/S_DeathBlock/S_DeathBlock.yy",},

@@ -6,6 +6,9 @@ if global.character = "Billy"
 if !running and !hit and grounded and !slicing {
 		image_speed = 1;
 	}
+if sprite_index = walksprite and abs(xspeed) < 1 {
+	image_index = 0
+	}
 }
 if global.character = "Motu" {
 if grounded and xspeed = 0 image_speed = 0;	
@@ -193,7 +196,7 @@ if !sloping and !running {
 	}
 	
 //fix tiny momentum retention
-if abs(xspeed) < 0.25 {
+if abs(xspeed) < 0.35 {
 		xspeed = 0;
 	}
 

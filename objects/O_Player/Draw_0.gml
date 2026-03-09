@@ -19,6 +19,7 @@ var idleoffsetbilly
 if global.character = "Billy" {
 		idleoffsetbilly = int64(image_index)
 		if image_index > 3 idleoffsetbilly = int64(image_index-3)
+		if image_index > 4 idleoffsetbilly = int64(image_index-5)
 	}
 if sprite_index = idlesprite {draw_sprite_ext(weaponidlesprite,image_index,draw_x,draw_y+1-idleoffsetbilly,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
 if sprite_index = landsprite {draw_sprite_ext(weaponwalksprite,1,draw_x,draw_y+2,facing,image_yscale,image_angle,c_white,(1-(global.debugmode/2)));}
