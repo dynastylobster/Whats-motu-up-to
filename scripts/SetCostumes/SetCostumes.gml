@@ -48,6 +48,12 @@ function SetCostumes(costumetype = noone, weapontype = noone){
 		
 		break;
 		case "Billy":
+		max_walkspeed = 1.8
+		max_runspeed = 2.65
+		accel = 0.35
+		jumpspeed =5.75
+		grav = 0.3
+		max_yspeed = 5
 		behindsprite = S_BillyITail
 		idlesprite = S_BillyIdle
 		slicepaloffs = 4
