@@ -1,1 +1,0 @@
-SetCostumes("Billy")

@@ -13,6 +13,12 @@ function SetCostumes(costumetype = noone, weapontype = noone){
 		case "Motu":
 			
 		with O_Player {
+		max_walkspeed = 1.5
+		max_runspeed = 2.5
+		accel = 0.25
+		jumpspeed =6
+		grav = 0.3
+		max_yspeed = 4
 		resetidleatxspeed = 0.2
 		slicepaloffs = 0;
 		behindsprite = S_MotuHair

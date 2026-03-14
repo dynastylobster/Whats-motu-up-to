@@ -1,9 +1,9 @@
 // Inherit the parent event
 //was just for the video {audio_play_sound(MusFactory,0,true,1,0,1);}
 SetCostumes()
-
 mask_index = S_MotuIdle
 depth -= 25
+idleoffsetbilly = 0
 event_inherited();
 age = 0;
 baseruntimer = 10;
