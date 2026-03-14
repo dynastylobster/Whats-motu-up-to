@@ -1,4 +1,7 @@
 //character animation stuff
+if (keyboard_check_pressed(ord("P"))) {
+	debugmode = !debugmode;
+}
 
 if global.character = "Billy" 
 {
@@ -196,7 +199,8 @@ if !sloping and !running {
 	}
 	
 //fix tiny momentum retention
-if abs(xspeed) < 0.35 {
+
+if abs(xspeed) < 0.15 {
 		xspeed = 0;
 	}
 

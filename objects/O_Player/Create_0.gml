@@ -31,3 +31,5 @@ if global.brightsprites = true {
 		BrightPalette = true;
 	}
 //initializesprites
+
+debugmode = false;

@@ -55,3 +55,7 @@ draw_text(x,y-50,"grounded:"+string(grounded))
 //draw_self();
 //draw_text(x,y-50,string(sprite_index))
 //draw_text(x,y-24,string(grounded))
+
+if (debugmode) {
+	draw_text(x - 20, y - 20, xspeed);
+}
