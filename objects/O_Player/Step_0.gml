@@ -28,7 +28,14 @@ if abs(xspeed+yspeed) < 1 {
 //weapons stuff
 
 
-if grounded {if downslicing = true {slicng = false} downslicing = false; global.scoremultiplier = 1;}
+if grounded {
+		if downslicing = true {
+				slicng = false
+				}
+		downslicing = false;
+
+	global.scoremultiplier = 1;
+	}
 if landingtimer > 0 {
 		global.stoptimer = 0
 	}
@@ -200,7 +207,7 @@ if !sloping and !running {
 	
 //fix tiny momentum retention
 
-if abs(xspeed) < 0.15 {
+if abs(xspeed) < 0.25 and !running {
 		xspeed = 0;
 	}
 

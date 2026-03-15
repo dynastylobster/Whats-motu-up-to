@@ -31,6 +31,7 @@ if instance_exists(O_AttackParent) {
 					hp-=O_AttackParent.damagedown
 			}
 if O_Player.downslicing {
+		
 		O_Player.xspeed = O_Player.facing * attack.downslice_yeet;
 		O_Player.yspeed = - (attack.downslice_yeet*2)
 		O_Player.boost = true;
@@ -50,6 +51,9 @@ if O_Player.downslicing {
 			horizontal = false;
 			xspeed = -2
 			}
+			if !immunedown {
+	 instance_create_depth(x,y,depth-25,O_ScoreParticle)
+			}
 		
 		O_Player.downslicing = false;
 } else {
@@ -63,8 +67,6 @@ yspeed -= (O_AttackParent.thrust)
 }
 instance_create_depth(x,y,depth-1,O_HitSpark)
 }
-
-
 
 global.stoptimer = 3;
 

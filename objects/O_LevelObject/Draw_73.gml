@@ -1,5 +1,5 @@
 gpu_set_tex_filter(false)
-pal_swap_set(S_EnemyPal1,0+BrightSprites*4,0)
+pal_swap_set(S_EnemyPal1,4,0)
 draw_sprite(S_HP,0,CAM_X+8+hpdrawx,CAM_Y+8)
 
 
