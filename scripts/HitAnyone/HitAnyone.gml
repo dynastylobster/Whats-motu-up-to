@@ -15,6 +15,12 @@ if instance_exists(O_AttackParent) {
 		if attack.active {
 			if attack.willdamage = true {
 				if !hit and attack.damage > 0 {
+					if !instance_place(x,y,O_ScoreParticle) {
+					if (O_Player.downslicing and !immunedown) xor (!O_Player.downslicing and !immuneside) {
+					instance_create_depth(x,y,depth-25,O_ScoreParticle)	
+					}
+				
+				}
 			audio_play_sound(Snd_SliceHit,0,0,global.sfxvolume,0,random_range(0.95,1.05))
 			hittimer = 8;
 			currentpal = 8;
@@ -50,9 +56,6 @@ if O_Player.downslicing {
 			with (instance_create_depth(x,y,depth-1,O_HitSpark)) {
 			horizontal = false;
 			xspeed = -2
-			}
-			if !immunedown {
-	 instance_create_depth(x,y,depth-25,O_ScoreParticle)
 			}
 		
 		O_Player.downslicing = false;
