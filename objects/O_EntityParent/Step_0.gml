@@ -40,7 +40,7 @@ if knockspeed < 0 knockspeed += 0.125
 		y += yspeed
 	}
 
-	}
+	
 }
 
 if hasgravity and !isenemy {
@@ -61,3 +61,34 @@ if hasgravity and !isenemy {
 		} else {sloping = false;}
 		
 		}
+
+if walking{
+	if place_meeting(x,y,[WALL,WALLTILE]) {
+			y-= 0.25
+		}
+	// rev up to a walking state
+	
+	if knockspeed = 0 {
+		if xspeed > walkspeed {
+				xspeed -= 0.5
+			}
+		if xspeed < walkspeed {
+				xspeed += 0.5
+			}
+	}
+			
+		if place_meeting(x+xspeed,y,[WALL,WALLTILE]) or  place_meeting(x+xspeed,y,O_Wall) {
+				walkspeed *= -1
+				xspeed = walkspeed
+			}
+		// turn on ledges
+		if hasgravity {
+				if !collision_line(x,y,x,y+24,[WALL,WALLTILE,SLOPE,SLOPETILE],16,false) and !collision_line(x,y,x,y+24,O_Wall,16,false) and !collision_line(x,y,x,y+24,O_Slope,16,false) {
+				walkspeed *= -1
+				xspeed = walkspeed
+				}
+			}
+	}
+
+
+}

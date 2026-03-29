@@ -60,6 +60,8 @@
     {"$GMObjectProperty":"v2","%Name":"resistside","filters":[],"listItems":[],"multiselect":false,"name":"resistside","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"nonhittimer","filters":[],"listItems":[],"multiselect":false,"name":"nonhittimer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"knockspeed","filters":[],"listItems":[],"multiselect":false,"name":"knockspeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"walking","filters":[],"listItems":[],"multiselect":false,"name":"walking","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"walkspeed","filters":[],"listItems":[],"multiselect":false,"name":"walkspeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1.5","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
