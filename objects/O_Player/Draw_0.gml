@@ -48,14 +48,6 @@ if global.character = "Motu" and hp >= 3 {
 pal_swap_reset();
 
 if global.debugmode {
-draw_text(x,y-32,"sloping:"+string(sloping))
-draw_text(x,y-50,"grounded:"+string(grounded))
-}
-
-//draw_self();
-//draw_text(x,y-50,string(sprite_index))
-//draw_text(x,y-24,string(grounded))
-
-if (debugmode) {
-	draw_text(x - 20, y - 20, xspeed);
-}
+		DebugShowVariables([sloping, grounded,],
+		["sloping", "grounded",]);
+	}

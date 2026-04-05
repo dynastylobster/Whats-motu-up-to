@@ -1,7 +1,7 @@
 //character animation stuff
-if (keyboard_check_pressed(ord("P"))) {
+/*if (keyboard_check_pressed(ord("P"))) {
 	debugmode = !debugmode;
-}
+}*/
 
 if global.character = "Billy" 
 {

@@ -106,7 +106,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.1400.4.1030",
+    "IDEVersion":"2024.1400.4.1011",
   },
   "name":"whats motu up to",
   "resources":[
@@ -241,6 +241,7 @@
     {"id":{"name":"__InputVibrateSystem","path":"scripts/__InputVibrateSystem/__InputVibrateSystem.yy",},},
     {"id":{"name":"BreakSliceBlock","path":"scripts/BreakSliceBlock/BreakSliceBlock.yy",},},
     {"id":{"name":"CheckOnscreen","path":"scripts/CheckOnscreen/CheckOnscreen.yy",},},
+    {"id":{"name":"DebugShowVariables","path":"scripts/DebugShowVariables/DebugShowVariables.yy",},},
     {"id":{"name":"DrawEntity","path":"scripts/DrawEntity/DrawEntity.yy",},},
     {"id":{"name":"GenerateHitBox","path":"scripts/GenerateHitBox/GenerateHitBox.yy",},},
     {"id":{"name":"HitAnyone","path":"scripts/HitAnyone/HitAnyone.yy",},},
@@ -449,6 +450,7 @@
     {"id":{"name":"scr_retro_pal_swapper_utilities","path":"scripts/scr_retro_pal_swapper_utilities/scr_retro_pal_swapper_utilities.yy",},},
     {"id":{"name":"scr_retro_pal_swapper","path":"scripts/scr_retro_pal_swapper/scr_retro_pal_swapper.yy",},},
     {"id":{"name":"SetCostumes","path":"scripts/SetCostumes/SetCostumes.yy",},},
+    {"id":{"name":"SetSign","path":"scripts/SetSign/SetSign.yy",},},
     {"id":{"name":"SetWeapon","path":"scripts/SetWeapon/SetWeapon.yy",},},
     {"id":{"name":"SliceAnimation","path":"scripts/SliceAnimation/SliceAnimation.yy",},},
     {"id":{"name":"SwitchRatio","path":"scripts/SwitchRatio/SwitchRatio.yy",},},

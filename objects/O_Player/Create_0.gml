@@ -32,4 +32,4 @@ if global.brightsprites = true {
 	}
 //initializesprites
 
-debugmode = false;
+//debugmode = false;

@@ -181,14 +181,14 @@ switch owner.object_get_parent(owner) {
 	}
 						// if youre not near the slope, stop thinking you be sloping
 					if !place_meeting(x,y+12,[SLOPE,SLOPETILE]) and !place_meeting(x,y+5,O_Slope) then {on = false; owner.sloping = false;}
-						if abs(owner.xspeed) > 1 {
-						if collision_line(x,y+12,x+owner.facing*4,y+4,[SLOPE,SLOPETILE],true,false) or collision_line(x,y+4,x+owner.facing*4,y+4,O_Slope,true,false) {
-								if owner.facing = 1 {owner.xspeed -= 0.25}
-								if owner.facing = -1 {owner.xspeed += 0.25}
+						if (abs(owner.xspeed) > 1) {
+						if collision_line(x,y+12,x+owner.movementFacing*4,y+4,[SLOPE,SLOPETILE],true,false) or collision_line(x,y+4,x+owner.movementFacing*4,y+4,O_Slope,true,false) {
+								if owner.movementFacing = 1 {owner.xspeed -= 0.25}
+								if owner.movementFacing = -1 {owner.xspeed += 0.25}
 							}
-						if collision_line(x,y-8,x+owner.facing*8,y-1,[SLOPE,SLOPETILE],true,false) or collision_line(x,y-1,x+owner.facing*8,y-1,O_Slope,true,false) {
-								if owner.facing = 1 {owner.xspeed -= 0.5}
-								if owner.facing = -1 {owner.xspeed += 0.5}
+						if collision_line(x,y-8,x+owner.movementFacing*8,y-1,[SLOPE,SLOPETILE],true,false) or collision_line(x,y-1,x+owner.movementFacing*8,y-1,O_Slope,true,false) {
+								if owner.movementFacing = 1 {owner.xspeed -= 0.5}
+								if owner.movementFacing = -1 {owner.xspeed += 0.5}
 							}
 						}
 				}

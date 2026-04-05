@@ -14,4 +14,8 @@ pal_swap_reset();
 */
 if !dead {
 	DrawEntity();
+	if global.debugmode {
+		DebugShowVariables([/*sloping, grounded,*/ xspeed, walkspeed, knockspeed],
+		[/*"sloping", "grounded",*/ "xspeed", "walkspeed", "knockspeed"]);
+	}
 }
