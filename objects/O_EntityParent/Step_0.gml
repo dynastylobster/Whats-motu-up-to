@@ -31,8 +31,11 @@ if knockspeed < 0 knockspeed += 0.125
 		
 		}
 
-	if !place_meeting(x+xspeed+knockspeed,y,[O_Wall,WALL,WALLTILE,O_SliceBlock]) {
+	if !place_meeting(x+xspeed,y,[O_Wall,WALL,WALLTILE,O_SliceBlock]) {
 		x += xspeed + knockspeed
+	}
+	if knockspeed > 0 {
+	xspeed = 0;	
 	}
 	if place_meeting(x+xspeed+(2*sign(xspeed)),y,[O_Wall,WALL,WALLTILE,O_SliceBlock]) {
 		knockspeed *= -1
@@ -71,7 +74,7 @@ if hasgravity and !isenemy {
 		
 		}
 
-if walking{
+if walking {
 	if (xspeed < walkspeed) { xspeed += 0.01; }
 	if (xspeed > walkspeed) { xspeed -= 0.01; }
 	
@@ -85,12 +88,15 @@ if walking{
 			}
 		// turn on ledges
 		if hasgravity {
-				if !collision_line(x,y-10,x,y+24,[WALL,WALLTILE,SLOPE,SLOPETILE],16,false) and !collision_line(x,y-10,x,y+24,O_Wall,16,false) and !collision_line(x,y,x,y+24,O_Slope,16,false) && yspeed == 0 && grounded {
+				if !collision_line(x,y-10,x,y+24,[WALL,WALLTILE,SLOPE,SLOPETILE,SEMI,SEMITILE],16,false) and !collision_line(x,y-10,x,y+24,O_Wall,16,false) and !collision_line(x,y,x,y+24,O_Slope,16,false) and !collision_line(x,y,x,y+24,O_Semi,16,false) && yspeed == 0 && grounded {
 				walkspeed *= -1
 				xspeed = walkspeed
 				}
 			}
+	if hit {xspeed = 0}
+
 	}
+
 
 movementFacing = sign(xspeed);
 }
