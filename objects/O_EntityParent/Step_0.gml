@@ -66,17 +66,7 @@ if walking{
 	if place_meeting(x,y,[WALL,WALLTILE]) {
 			y-= 0.25
 		}
-	// rev up to a walking state
-	
-	if knockspeed = 0 {
-		if xspeed > walkspeed {
-				xspeed -= 0.5
-			}
-		if xspeed < walkspeed {
-				xspeed += 0.5
-			}
-	}
-			
+
 		if place_meeting(x+xspeed,y,[WALL,WALLTILE]) or  place_meeting(x+xspeed,y,O_Wall) {
 				walkspeed *= -1
 				xspeed = walkspeed
