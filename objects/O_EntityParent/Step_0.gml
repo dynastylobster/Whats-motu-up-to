@@ -40,7 +40,7 @@ if (knockbackChangesDirection && knockspeed != 0) {
 	if knockspeed > 0 {
 	xspeed = 0;	
 	}
-	if place_meeting(x+xspeed+(2*sign(xspeed)),y,[O_Wall,WALL,WALLTILE,O_SliceBlock]) {
+	if place_meeting(x+xspeed+knockspeed+(2*sign(xspeed)),y,[O_Wall,WALL,WALLTILE,O_SliceBlock]) {
 		knockspeed *= -1
 		//knockspeed = sign(knockspeed)*2 // could be an issue
 		if (walking) {
