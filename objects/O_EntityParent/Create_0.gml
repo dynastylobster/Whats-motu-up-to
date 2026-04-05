@@ -1,4 +1,3 @@
-if !sliceable then mask_index = S_Empty
 if walking {
 xspeed = walkspeed
 }

@@ -13,8 +13,8 @@
   "name":"O_EntityParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Don't Place",
-    "path":"folders/Objects/Don't Place.yy",
+    "name":"Common",
+    "path":"folders/Objects/Common.yy",
   },
   "parentObjectId":null,
   "persistent":false,
