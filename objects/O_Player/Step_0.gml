@@ -17,6 +17,8 @@ if global.character = "Motu" {
 if grounded and xspeed = 0 image_speed = 0;	
 }
 
+
+
 //hair/tail stuff
 
 

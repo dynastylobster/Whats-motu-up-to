@@ -14,7 +14,7 @@ if (knockbackChangesDirection && knockspeed != 0) {
 	walkspeed = SetSign(walkspeed, knockspeed);
 	}
 */
-}
+
 	if hasgravity {
 		
 		if !grounded {
@@ -102,3 +102,7 @@ if walking {
 
 
 movementFacing = sign(xspeed);
+
+	
+
+}

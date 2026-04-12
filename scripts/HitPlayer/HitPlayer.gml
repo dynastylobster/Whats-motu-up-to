@@ -1,6 +1,6 @@
 function HitPlayer(){
 	
-	if instance_exists(O_Player) and !global.stop {
+	if instance_exists(O_Player) and !global.stop and !isplatform {
 		with O_Player {
 	if hp = 3 {
 		instance_create_depth(x,y,depth-1,O_MotuHelm);
