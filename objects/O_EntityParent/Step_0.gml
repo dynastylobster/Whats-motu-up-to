@@ -8,12 +8,11 @@ if !global.stop {
 if knockspeed > 0 knockspeed -= 0.125
 if knockspeed < 0 knockspeed += 0.125
 
-/*
+
 if (knockbackChangesDirection && knockspeed != 0) {
 	xspeed = SetSign(xspeed, knockspeed);
 	walkspeed = SetSign(walkspeed, knockspeed);
 	}
-*/
 
 	if hasgravity {
 		
