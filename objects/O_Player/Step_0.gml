@@ -69,7 +69,15 @@ if place_meeting(x,y+1,[WALL,WALLTILE]) or place_meeting(x,y+1,O_Wall) or slopin
 	} else {
 		if grounded {
 			coyotetime = 6;
-		if !sloping then grounded = false;
+		if !sloping {
+		 if (!place_meeting(x,y+1,O_EntityParent)) {
+			 grounded = false;	
+		 } else if place_meeting(x,y+1,O_EntityParent) and instance_nearest(x,y+8,O_EntityParent).isplatform {
+		grounded = true	 
+		x+= instance_nearest(x,y+8,O_EntityParent).xspeed + instance_nearest(x,y+8,O_EntityParent).knockspeed
+		y+= instance_nearest(x,y+8,O_EntityParent).yspeed
+		 }
+		 }
 			}
 		}
 
