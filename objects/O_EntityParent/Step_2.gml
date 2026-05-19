@@ -46,3 +46,15 @@ if !onscreen {
 	
 	
 }
+
+if isplatform and place_meeting(x,y-4,O_Player) and !global.stop{
+		while collision_line(O_Player.x,y,O_Player.x,y-0.25,O_Player,16,false) {
+			O_Player.y-= 0.25 + yspeed
+		}
+		//O_Player.x += (xspeed/2)
+		//O_Player.x += (xspeed/4)
+		//O_Player.x += (xspeed/8)
+		//O_Player.x += (x - xprevious)
+	    O_Player.x += xspeed
+		O_Player.x = int64(O_Player.x)
+	}
