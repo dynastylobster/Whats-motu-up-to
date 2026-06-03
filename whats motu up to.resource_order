@@ -90,6 +90,7 @@
     {"name":"O_DeathWall","order":2,"path":"objects/O_DeathWall/O_DeathWall.yy",},
     {"name":"O_EntityParent","order":5,"path":"objects/O_EntityParent/O_EntityParent.yy",},
     {"name":"O_ExplodeEffect","order":1,"path":"objects/O_ExplodeEffect/O_ExplodeEffect.yy",},
+    {"name":"O_fuckyouplatforms","order":6,"path":"objects/O_fuckyouplatforms/O_fuckyouplatforms.yy",},
     {"name":"O_GameObject","order":1,"path":"objects/O_GameObject/O_GameObject.yy",},
     {"name":"O_Hitbox","order":7,"path":"objects/O_Hitbox/O_Hitbox.yy",},
     {"name":"O_HitBoxTest","order":8,"path":"objects/O_HitBoxTest/O_HitBoxTest.yy",},

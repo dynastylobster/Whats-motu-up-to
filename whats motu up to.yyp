@@ -106,7 +106,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.1400.4.1030",
+    "IDEVersion":"2024.1400.5.1065",
   },
   "name":"whats motu up to",
   "resources":[
@@ -119,6 +119,7 @@
     {"id":{"name":"O_DeathWall","path":"objects/O_DeathWall/O_DeathWall.yy",},},
     {"id":{"name":"O_EntityParent","path":"objects/O_EntityParent/O_EntityParent.yy",},},
     {"id":{"name":"O_ExplodeEffect","path":"objects/O_ExplodeEffect/O_ExplodeEffect.yy",},},
+    {"id":{"name":"O_fuckyouplatforms","path":"objects/O_fuckyouplatforms/O_fuckyouplatforms.yy",},},
     {"id":{"name":"O_GameObject","path":"objects/O_GameObject/O_GameObject.yy",},},
     {"id":{"name":"O_Gem","path":"objects/O_Gem/O_Gem.yy",},},
     {"id":{"name":"O_Hitbox","path":"objects/O_Hitbox/O_Hitbox.yy",},},

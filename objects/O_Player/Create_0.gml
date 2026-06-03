@@ -26,6 +26,11 @@ GenerateHitBox(x,y,1,5,-2,7,O_Player,0,true);
 //GenerateHitBox(x,y,12,12,-7,8,O_Player,1,true);
 //heres the new slice
 instance_create_depth(x,y,depth,O_AttackParent);
+baseplatform = instance_create_depth(-9999,-9999,depth,O_fuckyouplatforms);
+platform = baseplatform;
+enemiesBelowMe = ds_list_create();
+ridingX = 0;
+ridingY = 0;
 
 if global.brightsprites = true {
 		BrightPalette = true;
