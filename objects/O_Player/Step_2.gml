@@ -4,8 +4,8 @@ draw_y = ceil(y);
 //moving platform stuff
 
 //if place_meeting(x,y+yspeed,platform) {}
-		x+= platform.xspeed;
-		y+= platform.yspeed;
+		x+= (platform.x -platform.xprevious);
+		y+= (platform.y -platform.yprevious)
 /*if instance_nearest(x,y+8,O_EntityParent).isplatform = true and !grounded {
 		
 		while !place_meeting(x,y+1,O_EntityParent) and yspeed > 0 {

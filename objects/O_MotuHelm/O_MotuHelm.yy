@@ -21,8 +21,8 @@
     "path":"folders/Objects/Decor.yy",
   },
   "parentObjectId":{
-    "name":"O_EntityParent",
-    "path":"objects/O_EntityParent/O_EntityParent.yy",
+    "name":"O_SliceBlockParticle",
+    "path":"objects/O_SliceBlockParticle/O_SliceBlockParticle.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
