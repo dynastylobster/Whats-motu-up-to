@@ -42,6 +42,7 @@
     {"$GMObjectProperty":"v2","%Name":"SpriteC","filters":[],"listItems":[],"multiselect":false,"name":"SpriteC","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"PalB","filters":[],"listItems":[],"multiselect":false,"name":"PalB","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"4","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"PalC","filters":[],"listItems":[],"multiselect":false,"name":"PalC","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"4","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"SpriteSine","filters":[],"listItems":[],"multiselect":false,"name":"SpriteSine","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

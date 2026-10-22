@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+event_inherited();
 dead = false;
 deathtimer = 0;
 draw_x = x

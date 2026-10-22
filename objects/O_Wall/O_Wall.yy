@@ -9,7 +9,10 @@
     "name":"Universal",
     "path":"folders/Objects/Universal.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"O_All",
+    "path":"objects/O_All/O_All.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

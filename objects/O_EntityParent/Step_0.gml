@@ -1,12 +1,17 @@
 /// @description Insert description here
 // You can write your code in this editor
+event_inherited();
+
+age += agerate;	
 
 if nonhittimer > 0 {
 nonhittimer--	
 }
 if isenemy {
 if !global.stop {
-age += agerate;
+	
+
+
 if knockspeed > 0 knockspeed -= 0.125
 if knockspeed < 0 knockspeed += 0.125
 
