@@ -29,6 +29,9 @@ if place_meeting(x,y+8,O_EntityParent) {
 	if (enemy.isplatform == true) {
 		platform = enemy;
 	}  else {platform = baseplatform;}
+	
+
+	
 } else {platform = baseplatform;}
 if platform = baseplatform and !place_meeting(x,y+2,O_EntityParent) {
  if !place_meeting(x,y+1,[WALL,WALLTILE,SLOPE,SLOPETILE,SEMI,SEMITILE,O_Wall,O_Slope,O_Semi]) then grounded = false;

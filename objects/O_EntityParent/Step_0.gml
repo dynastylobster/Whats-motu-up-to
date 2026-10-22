@@ -2,17 +2,11 @@
 // You can write your code in this editor
 event_inherited();
 
-age += agerate;	
+age += agerate;
 
 if nonhittimer > 0 {
 nonhittimer--	
 }
-if isenemy {
-if !global.stop {
-
-if knockspeed > 0 knockspeed -= 0.125
-if knockspeed < 0 knockspeed += 0.125
-
 
 	if MoveSineVertical != 0 {
 		y = starty + (sin(age)) *MoveSineVertical
@@ -20,6 +14,16 @@ if knockspeed < 0 knockspeed += 0.125
 	if MoveSineHorizontal != 0 {
 		x = startx + (sin(age)) *MoveSineHorizontal
 		}
+
+
+if isenemy {
+if !global.stop {
+
+if knockspeed > 0 knockspeed -= 0.125
+if knockspeed < 0 knockspeed += 0.125
+
+
+
 
 if (knockbackChangesDirection && knockspeed != 0) {
 	xspeed = SetSign(xspeed, knockspeed);

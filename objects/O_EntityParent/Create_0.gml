@@ -14,3 +14,5 @@ if hasgravity{
 knockspeed = 0;
 movementFacing = facing;
 age = 0;
+starty = y 
+startx = x

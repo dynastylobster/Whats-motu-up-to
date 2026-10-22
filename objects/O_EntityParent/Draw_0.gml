@@ -15,9 +15,7 @@ pal_swap_reset();
 if !dead {
 	DrawEntity();
 	if global.debugmode and !nodebuginfo {
-		DebugShowVariables([/*sloping, grounded,*/ xspeed, walkspeed, knockspeed],
-		[/*"sloping", "grounded",*/ "xspeed", "walkspeed", "knockspeed"]);
+		DebugShowVariables([/*sloping, grounded,*/ xspeed, walkspeed, knockspeed, age , starty+sin(age), MoveSineVertical, y],
+		[/*"sloping", "grounded",*/ "xspeed", "walkspeed", "knockspeed", "age", "sine", "sine distance", "y"]);
 	}
 }
-
-draw_text(x,y-25,string(age));
