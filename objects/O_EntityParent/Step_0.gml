@@ -1,13 +1,22 @@
 /// @description Insert description here
 // You can write your code in this editor
+
 if nonhittimer > 0 {
 nonhittimer--	
 }
 if isenemy {
 if !global.stop {
+age += agerate;
 if knockspeed > 0 knockspeed -= 0.125
 if knockspeed < 0 knockspeed += 0.125
 
+
+	if MoveSineVertical != 0 {
+		y = starty + sin(age)*MoveSineVertical
+		}
+	if MoveSineHorizontal != 0 {
+		y = startx + sin(age)*MoveSineHorizontal
+		}
 
 if (knockbackChangesDirection && knockspeed != 0) {
 	xspeed = SetSign(xspeed, knockspeed);
