@@ -9,18 +9,16 @@ nonhittimer--
 }
 if isenemy {
 if !global.stop {
-	
-
 
 if knockspeed > 0 knockspeed -= 0.125
 if knockspeed < 0 knockspeed += 0.125
 
 
 	if MoveSineVertical != 0 {
-		y = starty + sin(age)*MoveSineVertical
+		y = starty + (sin(age)) *MoveSineVertical
 		}
 	if MoveSineHorizontal != 0 {
-		y = startx + sin(age)*MoveSineHorizontal
+		x = startx + (sin(age)) *MoveSineHorizontal
 		}
 
 if (knockbackChangesDirection && knockspeed != 0) {

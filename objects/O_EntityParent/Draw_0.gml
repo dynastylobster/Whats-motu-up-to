@@ -19,3 +19,5 @@ if !dead {
 		[/*"sloping", "grounded",*/ "xspeed", "walkspeed", "knockspeed"]);
 	}
 }
+
+draw_text(x,y-25,string(age));
