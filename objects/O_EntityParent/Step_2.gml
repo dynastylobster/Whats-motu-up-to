@@ -47,6 +47,17 @@ if !onscreen {
 	
 }
 
+
+if place_meeting(x,y-2,O_Player){
+	audio_stop_sound(Snd_Land)
+		while !place_meeting(x,y-0.25,O_Player) and O_Player.yspeed >= 0{			 
+			O_Player.y += 0.125
+		}
+		while place_meeting(x,y,O_Player) {
+		O_Player.y-= 0.5
+		}
+	}
+
 /*if isplatform and place_meeting(x,y-4,O_Player) and !global.stop{
 		while collision_line(O_Player.x,y,O_Player.x,y-0.25,O_Player,16,false) {
 			O_Player.y-= 0.25 + yspeed

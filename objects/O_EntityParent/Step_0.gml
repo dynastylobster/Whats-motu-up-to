@@ -69,6 +69,9 @@ if (knockbackChangesDirection && knockspeed != 0) {
 	if !place_meeting(x,y+yspeed,[WALL,WALLTILE,O_Wall]) {
 		y += yspeed
 	}
+	
+
+
 
 	
 }

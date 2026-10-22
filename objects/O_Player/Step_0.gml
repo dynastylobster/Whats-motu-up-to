@@ -27,18 +27,8 @@ if (place_meeting(x,y+8,O_EntityParent)) {
 if place_meeting(x,y+4,O_EntityParent) {
 	var enemy = instance_place(x,y+4,O_EntityParent)
 	if (enemy.isplatform == true) {
-		platform = enemy;
-		
-		while place_meeting(x,y+2,platform) and yspeed >= 0 and sin(platform.age) > 0 {
-			y+= 0.125
-			audio_stop_sound(Snd_Land)
-			}
-		while place_meeting(x,y,platform) and yspeed >= 0 {
-			y-= 0.25
-			}
-		}
-		
-	}  else {platform = baseplatform;}
+		platform = enemy;}
+		} else {platform = baseplatform;}
 	
 if platform = baseplatform and !place_meeting(x,y+2,O_EntityParent) {
  if !place_meeting(x,y+1+abs(yspeed),[WALL,WALLTILE,SLOPE,SLOPETILE,SEMI,SEMITILE,O_Wall,O_Slope,O_Semi]) then grounded = false;
@@ -139,7 +129,7 @@ if sprite_index = jumpsprite then sprite_index = runsprite;
 if InputPressed(INPUT_VERB.ACCEPT) or (place_meeting(x,y+1,[WALL,WALLTILE,O_Wall,platform]) and jumptimer > 0) or (landingtimer > 0 and InputPressed(INPUT_VERB.ACCEPT)) {
 	audio_play_sound(Snd_Jump,0,0,global.sfxvolume*1.25,0,1);
 		yspeed = -jumpspeed
-		if sloping {y-= 2;sloping = false;}
+		if sloping {y-= 3;sloping = false;}
 		grounded = false
 		y-= 1
 	}
