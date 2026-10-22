@@ -129,9 +129,9 @@ if sprite_index = jumpsprite then sprite_index = runsprite;
 if InputPressed(INPUT_VERB.ACCEPT) or (place_meeting(x,y+1,[WALL,WALLTILE,O_Wall,platform]) and jumptimer > 0) or (landingtimer > 0 and InputPressed(INPUT_VERB.ACCEPT)) {
 	audio_play_sound(Snd_Jump,0,0,global.sfxvolume*1.25,0,1);
 		yspeed = -jumpspeed
-		if sloping {y-= 3;sloping = false;}
+		if sloping {y-= 2;sloping = false;}
 		grounded = false
-		y-= 1
+		y-= 4
 	}
 	while place_meeting(x,y,[WALL,WALLTILE,platform]) or place_meeting(x,y,O_Wall) {
 			y-= 0.125
