@@ -29,8 +29,8 @@ if place_meeting(x,y+4,O_EntityParent) {
 	if (enemy.isplatform == true) {
 		platform = enemy;
 		
-		while place_meeting(x,y+1,platform) and yspeed >= 0 and sin(platform.age) > 0 {
-			y+= 0.25
+		while place_meeting(x,y+2,platform) and yspeed >= 0 and sin(platform.age) > 0 {
+			y+= 0.125
 			audio_stop_sound(Snd_Land)
 			}
 		while place_meeting(x,y,platform) and yspeed >= 0 {
